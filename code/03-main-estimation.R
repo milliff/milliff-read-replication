@@ -21,7 +21,7 @@
 cat("SETTING OPTIONS... \n\n", sep = "")
 
 # LOAD DATA ------------------------------------
-load("../data/main_df_28May24.RData")
+load("./data/main_df_28May24.RData")
 
 
 # -------------------------------------------------------------------------
@@ -48,7 +48,7 @@ rbind.data.frame(broom::tidy(count_mod), broom::tidy(fatal_mod), broom::tidy(ctf
   theme_bw() + 
   scale_color_taylor() + 
   theme(legend.position = "none")
-ggsave("../results/figs/Fig4.png", width = 10, height = 8, dpi = 300)
+ggsave("./results/figs/Fig4.png", width = 10, height = 8, dpi = 300)
 
 
 # Figure 5 ----------------------------------------------------------------
@@ -83,7 +83,7 @@ rbind.data.frame(broom::tidy(count_mod_cov), broom::tidy(fatal_mod_cov), broom::
   theme_bw() + 
   scale_color_taylor() + 
   theme(legend.position = "none")
-ggsave("../results/figs/Fig5.png", width = 10, height = 8, dpi = 300)
+ggsave("./results/figs/Fig5.png", width = 10, height = 8, dpi = 300)
 
 
 # Appendix Figure "5+" ----------------------------------------------------
@@ -122,7 +122,7 @@ rbind.data.frame(broom::tidy(count_mod_kitchensink), broom::tidy(fatal_mod_kitch
   theme_bw() + 
   scale_color_taylor() + 
   theme(legend.position = "none")
-ggsave("../results/figs/main_model_kitchen_sink.png", width = 10, height = 8, dpi = 300)
+ggsave("./results/figs/main_model_kitchen_sink.png", width = 10, height = 8, dpi = 300)
 
 # Table A2 ----------------------------------------------------------------
 
@@ -165,7 +165,7 @@ modelsummary::modelsummary(list(a2_c1, a2_c2, a2_c3, a2_c4, a2_c5, a2_c6, a2_c7,
                            stars = T, 
                            add_rows = data.frame("State FEs?", "N", "N", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "N"),
                            title = "Models of Hate Crime Count",
-                           output = "../results/tabs/TabA2.tex")
+                           output = "./results/tabs/TabA2.tex")
 # MISSING: UCDP
 
 # Table A3 ----------------------------------------------------------------
@@ -209,7 +209,7 @@ modelsummary::modelsummary(list(a3_c1, a3_c2, a3_c3, a3_c4, a3_c5, a3_c6, a3_c7,
                            stars = T, 
                            add_rows = data.frame("State FEs?", "N", "N", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "N"),
                            title = "Models of Fatal Hate Crime Count",
-                           output = "../results/tabs/TabA3.tex")
+                           output = "./results/tabs/TabA3.tex")
 
 # Table A4 ----------------------------------------------------------------
 
@@ -252,4 +252,4 @@ modelsummary::modelsummary(list(a4_c1, a4_c2, a4_c3, a4_c4, a4_c5, a4_c6, a4_c7,
                            stars = T, 
                            add_rows = data.frame("State FEs?", "N", "N", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "N"),
                            title = "Models of Counter-FIR Count",
-                           output = "../results/tabs/TabA4.tex")
+                           output = "./results/tabs/TabA4.tex")

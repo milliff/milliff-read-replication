@@ -21,7 +21,7 @@
 cat("SETTING OPTIONS... \n\n", sep = "")
 
 # LOAD DATA ------------------------------------
-load("../data/twoperiod_df.RData")
+load("./data/twoperiod_df.RData")
 
 # -------------------------------------------------------------------------
 # -------------------------------------------------------------------------
@@ -36,21 +36,21 @@ load("../data/twoperiod_df.RData")
 
 # postperiod_count <- lm_robust(n ~ vb_count + tot_pop, data = df |> filter(period == "count_post14"), fixed_effects = district, clusters = id.x)
 # preperiod_count  <- lm_robust(n ~ vb_count + tot_pop, data = df |> filter(period == "count_pre14"), fixed_effects = district, clusters = id.x)
-load("../data/twoperiod_nofe_model.RData")
-load("../data/twoperiod_fe_model.RData")
-load("../data/preperiod_fe_model.RData")
-load("../data/postperiod_fe_model.RData")
+load("./data/twoperiod_nofe_model.RData")
+load("./data/twoperiod_fe_model.RData")
+load("./data/preperiod_fe_model.RData")
+load("./data/postperiod_fe_model.RData")
 
 modelsummary::modelsummary(list("Interaction (Dist. FE)" = twoperiod_count_nofe,"Interaction (Unit FE)" = twoperiod_count, "Pre-Period" = preperiod_count, "Post-Period" = postperiod_count), stars = T,
                            coef_map = c("vb_count" = "VB School Count (post-2014)",
                                         "periodcount_pre14" = "Pre-2014 Indicator",
                                         "vb_count:periodcount_pre14" = "VB Schools x pre-2014"),
                            add_rows =  data.frame("FEs By:", "District", "Subdistrict", "District", "District"),
-                           output = "../results/tabs/pre-post-tabs.tex")
+                           output = "./results/tabs/pre-post-tabs.tex")
 
 modelsummary::modelplot(list("Interaction (Dist FE)" = twoperiod_count_nofe, "Interaction (Unit FE)" = twoperiod_count, "Pre-2014 Only" = preperiod_count, "Post-2014 Only" = postperiod_count),
                         coef_map = c("vb_count" = "VB School Count",
                                      "periodcount_pre14" = "Pre-2014 Indicator",
                                      "vb_count:periodcount_pre14" = "VB Schools x pre-2014")) +   
   scale_color_taylor(palette = "taylorRed" ) + labs(title = "Varying Association of VB School Presence on pre- vs post-2014 Hate crimes") + geom_vline(xintercept = 0, lty = 3, color = "darkgrey")
-ggsave("../results/figs/pre-post-est.png", height = 8, width = 11, dpi = 300)
+ggsave("./results/figs/pre-post-est.png", height = 8, width = 11, dpi = 300)

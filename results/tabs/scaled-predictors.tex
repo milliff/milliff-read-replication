@@ -1,0 +1,32 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+entry=none,label=none,
+note{}={+ p < 0.1, * p < 0.05, ** p < 0.01, *** p < 0.001},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]},
+column{1}={halign=l,},
+column{2}={halign=c,},
+column{3}={halign=c,},
+column{4}={halign=c,},
+hline{6}={1,2,3,4}{solid, 0.05em, black},
+}                     %% tabularray inner close
+\toprule
+& Scaled VB & Scaled HC & Both Scaled \\ \midrule %% TinyTableHeader
+VB Count (scaled) & \num{0.055}*** &                 & \num{0.158}*** \\
+& (\num{0.014})  &                 & (\num{0.041})  \\
+VB Count (Raw)    &                 & \num{0.028}*** &                 \\
+&                 & (\num{0.007})  &                 \\
+Num.Obs.          & \num{5724}     & \num{5724}     & \num{5724}     \\
+R2                & \num{0.144}    & \num{0.144}    & \num{0.144}    \\
+R2 Adj.           & \num{0.136}    & \num{0.136}    & \num{0.136}    \\
+AIC               & \num{3004.3}   & \num{5768.8}   & \num{5768.8}   \\
+BIC               & \num{3124.0}   & \num{5888.6}   & \num{5888.6}   \\
+RMSE              & \num{0.31}     & \num{0.40}     & \num{0.40}     \\
+Std.Errors        & by: district    & by: district    & by: district    \\
+Covs.             & All             & All             & All             \\
+State FEs?        & Yes             & Yes             & Yes             \\
+\bottomrule
+\end{talltblr}
+\end{table}

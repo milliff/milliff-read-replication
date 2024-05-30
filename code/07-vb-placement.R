@@ -21,7 +21,7 @@
 cat("SETTING OPTIONS... \n\n", sep = "")
 
 # LOAD DATA ------------------------------------
-load("../data/main_df_28May24.RData")
+load("./data/main_df_28May24.RData")
 
 
 
@@ -81,7 +81,7 @@ modelsummary::modelsummary(list(vb_presence, vb_presence_rel, vb_presence_chr, v
                                         "vio_crim" = "IPC Violent Crime Count",
                                         "tot_crim" = "IPC Total Crime Count",
                                         "tot_pop" = "Population"
-                           ), output = "../results/tabs/TabA13.tex")
+                           ), output = "./results/tabs/TabA13.tex")
 
 modelsummary::modelsummary(list(vb_number, vb_number_rel, vb_number_chr, vb_number_scst, vb_number_wfd, vb_number_dev, vb_count_all), stars = T, title = "Correlations with VB School Count", 
                            coef_map = c("I(prim_school - vb_count)" = "Non-VB Primary School Count",
@@ -106,4 +106,4 @@ modelsummary::modelsummary(list(vb_number, vb_number_rel, vb_number_chr, vb_numb
                                         "vio_crim" = "IPC Violent Crime Count",
                                         "tot_crim" = "IPC Total Crime Count",
                                         "tot_pop" = "Population"
-                           ), output = "../results/tabs/TabA12.tex")
+                           ), output = "./results/tabs/TabA12.tex")

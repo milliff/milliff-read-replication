@@ -17,8 +17,8 @@
 # --------------------------------------------
 
 # LOAD DATA ------------------------------------
-hc    <- read_csv("../data/hc_locs.csv")
-subdi <- st_read("../data/subdistricts.json") |> st_make_valid()
+hc    <- read_csv("./data/hc_locs.csv")
+subdi <- st_read("./data/subdistricts.json") |> st_make_valid()
 
 # -------------------------------------------------------------------------
 # -------------------------------------------------------------------------
@@ -50,7 +50,7 @@ hc %>%
        x = "", y= "Number of Events") + 
   scale_fill_brewer(palette = "Set1")
 
-ggsave("../results/figs/Fig1.png", width = 10, height = 8, dpi = 300)
+ggsave("./results/figs/Fig1.png", width = 10, height = 8, dpi = 300)
 
 
 # Figure 3 ---------------------------------------------------------------
@@ -88,7 +88,7 @@ tm_shape(hc_subdi_df) +
     alpha = 0.8
   )
 
-tmap_save(filename = "../results/figs/Fig3b.png")
+tmap_save(filename = "./results/figs/Fig3b.png")
 
 
 # Figure A1 ---------------------------------------------------------------
@@ -107,14 +107,14 @@ hc %>% group_by(yearmon) %>%
        fill = "Fatalities?",
        x = "Year, Month",
        caption = "Percent Fatal Events, Smoothed with 1-year span.")
-ggsave("../results/figs/FigA1.png", width = 10, height = 8, dpi = 300)
+ggsave("./results/figs/FigA1.png", width = 10, height = 8, dpi = 300)
 
 
 # Table A1 ----------------------------------------------------------------
 
 tmp <- hc %>% mutate(`Context/Bias Indicator` = factor(`Context/Bias Indicator`),
                      State = factor(State)) %>%  select(-c(Date, yearmon, Municipality, loc, lat, lon)) %>%  report_sample()
-knitr::kable(tmp, caption = "Descriptive Statistics for lynching attack data from Citizens' Religious Hate Crime Watch (HCW).", format = "latex") |> save_kable(file = "../results/tabs/TabA1.tex")
+knitr::kable(tmp, caption = "Descriptive Statistics for lynching attack data from Citizens' Religious Hate Crime Watch (HCW).", format = "latex") |> save_kable(file = "./results/tabs/TabA1.tex")
 
 # Additional Figures ---------------------------------------------------
 
@@ -126,4 +126,4 @@ hc %>% group_by(yearmon) %>% mutate(count = n()) %>%
   labs(title = "Hate Crime Events by Month",
        x = "Year, Month", y = "Count")
 
-ggsave("../results/figs/hc_by_month.png", width = 10, height = 8, dpi = 300)
+ggsave("./results/figs/hc_by_month.png", width = 10, height = 8, dpi = 300)

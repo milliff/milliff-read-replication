@@ -21,7 +21,7 @@
 cat("SETTING OPTIONS... \n\n", sep = "")
 
 # LOAD DATA ------------------------------------
-load("../data/did_df.RData")
+load("./data/did_df.RData")
 
 # Prep data
 panel <- panel |> mutate(numeric_id = as.numeric(c_code01))
@@ -48,7 +48,7 @@ panel <- panel |> mutate(pc_sc = tot_sc/tot_pop,
 borusyak <- did_imputation(data = panel, yname = "count", gname = "final_founding", tname = "year",
                            idname = "numeric_id", cluster_var = "district")
 
-data.frame(Estimate = borusyak$estimate, SE = borusyak$std.error, CI_low = borusyak$conf.low, CI_hi = borusyak$conf.high) |> knitr::kable(caption = "", format = "latex") |> kableExtra::save_kable(file = "../results/tabs/TabA14.tex")
+data.frame(Estimate = borusyak$estimate, SE = borusyak$std.error, CI_low = borusyak$conf.low, CI_hi = borusyak$conf.high) |> knitr::kable(caption = "", format = "latex") |> kableExtra::save_kable(file = "./results/tabs/TabA14.tex")
 
 borusyak_es <- did_imputation(data = panel, yname ="count", gname = "final_founding", tname = "year",
                               idname = "numeric_id", cluster_var = "district",
@@ -72,7 +72,7 @@ borusyak_es |>
        y = "Estimate",
        color = "Sig. Level") +
   scale_color_manual(labels = c("<90%", "90%", "95%", "99%"), values=c("#D7D3CB",  "#BDADAB", "#43475B", "#B1532A"))
-ggsave("../results/figs/FigA3.png", width = 11, height = 8, dpi = 300)
+ggsave("./results/figs/FigA3.png", width = 11, height = 8, dpi = 300)
 
 
 
@@ -199,4 +199,4 @@ ggplot(plot_frame) +
        color = "Estimator",
        shape = "Estimator",
        caption = "BJS = Borusyak, Jaravel, and Speiss (2021)\nCA = Callaway and Sant'Anna (2021)\ndCDH = de Chaisemartin and D'Haultfœuille (2020)\nSA = Sun and Abraham (2020)")
-ggsave("../results/figs/FigA4.png", width = 11, height = 8, dpi = 300)
+ggsave("./results/figs/FigA4.png", width = 11, height = 8, dpi = 300)

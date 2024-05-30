@@ -21,7 +21,7 @@
 cat("SETTING OPTIONS... \n\n", sep = "")
 
 # LOAD DATA ------------------------------------
-load("../data/main_df_28May24.RData")
+load("./data/main_df_28May24.RData")
 
 
 # -------------------------------------------------------------------------
@@ -59,7 +59,7 @@ rbind.data.frame(broom::tidy(count_mod_ff), broom::tidy(fatal_mod_ff), broom::ti
   theme_bw() + 
   scale_color_taylor() + 
   theme(legend.position = "none")
-ggsave("../results/figs/Fig7.png", width = 10, height = 8, dpi = 300)
+ggsave("./results/figs/Fig7.png", width = 10, height = 8, dpi = 300)
 
 
 # Figure 8 ----------------------------------------------------------------
@@ -78,7 +78,7 @@ flex <- df |> select(count, vb_count, final_founding, district, state_ut,
                                           na.rm = T, Xlabel = "VB School Founding Year", Ylabel = "Hate Crime Count",
                                           Dlabel = "VB Schools",  cl = "district", nbins = 3)
 
-png("../results/figs/Fig8.png")
+png("./results/figs/Fig8.png")
 plot(flex, bin.labs = F, theme.bw = T) + labs(title = "Marginal effect of VB School count on Hate Crimes", subtitle = "Moderated by Founding Date of School",
                                               caption = "Includes all controls from main specification\nErrors clustered by district, State FEs."
 )
@@ -108,7 +108,7 @@ rbind.data.frame(broom::tidy(count_mod_duration), broom::tidy(fatal_mod_duration
   theme_bw() + 
   scale_color_taylor() + 
   theme(legend.position = "none")
-ggsave("../results/figs/Fig9.png", width = 10, height = 8, dpi = 300)
+ggsave("./results/figs/Fig9.png", width = 10, height = 8, dpi = 300)
 
 
 # Figure A2 ---------------------------------------------------------------
@@ -134,7 +134,7 @@ rbind.data.frame(broom::tidy(count_mod_total), broom::tidy(fatal_mod_total), bro
   theme_bw() + 
   scale_color_taylor() + 
   theme(legend.position = "none")
-ggsave("../results/figs/FigA2.png", width = 10, height = 8, dpi = 300)
+ggsave("./results/figs/FigA2.png", width = 10, height = 8, dpi = 300)
 
 
 
@@ -149,6 +149,6 @@ counter_mod_ff <- lm_robust(counterFIR ~ vb_count  + tot_pop + pc_sc + pc_st + p
 modelsummary::modelsummary(list("HC Count" = count_mod_ff, "Fatal HC Count" = fatal_mod_ff, "Counter FIR Count" = counter_mod_ff), stars = T,
                            title = "Correlation between VB Schools and Attempted Lynching Count With School Founding Year and Other Controls",
                            add_rows = data.frame("State FEs?", "Y", "Y", "Y"),
-                           coef_omit = "state", output = "../results/tabs/TabA8.tex")
+                           coef_omit = "state", output = "./results/tabs/TabA8.tex")
 
 

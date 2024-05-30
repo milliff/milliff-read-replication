@@ -21,7 +21,7 @@
 cat("SETTING OPTIONS... \n\n", sep = "")
 
 # LOAD DATA ------------------------------------
-load("../data/main_df_28May24.RData")
+load("./data/main_df_28May24.RData")
 
 
 # -------------------------------------------------------------------------
@@ -69,7 +69,7 @@ modelsummary::modelsummary(list(count_mod_ext, count_mod_ext_cov, count_mod_ext_
                                         "nightlight_08" = "Avg. Nightlight Emission, 2008",
                                         "mean_time_decision" = "Avg. Days to Court Decision, 2010",
                                         "vio_crim" = "IPC Violent Crime Count",
-                                        "tot_crim" = "IPC Total Crime Count"), output = "../results/tabs/TabA6.tex")
+                                        "tot_crim" = "IPC Total Crime Count"), output = "./results/tabs/TabA6.tex")
 
 
 # Table A7 ----------------------------------------------------------------
@@ -104,4 +104,4 @@ modelsummary::modelsummary(list("Negative Binomial" = nb_count, "Poisson" =pois_
                                                                                                                          "nightlight_08" = "Avg. Nightlight Emission, 2008",
                                                                                                                          "mean_time_decision" = "Avg. Days to Court Decision, 2010",
                                                                                                                          "vio_crim" = "IPC Violent Crime Count",
-                                                                                                                         "tot_crim" = "IPC Total Crime Count"), output = "../results/tabs/TabA7.tex")
+                                                                                                                         "tot_crim" = "IPC Total Crime Count"), output = "./results/tabs/TabA7.tex")

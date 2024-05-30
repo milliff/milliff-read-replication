@@ -21,7 +21,7 @@
 cat("SETTING OPTIONS... \n\n", sep = "")
 
 # LOAD DATA ------------------------------------
-load("../data/main_df_28May24.RData")
+load("./data/main_df_28May24.RData")
 
 
 
@@ -37,7 +37,7 @@ primary_school_model <- lm_robust(count ~ pc_school, data = df, fixed_effects = 
 primary_school_model2 <- lm_robust(count ~ pc_school_novb, data = df, fixed_effects = state_ut, clusters = district)
 modelsummary::modelsummary(list(primary_school_model, primary_school_model2), coef_map = c("pc_school" = "Schools per Capita",
                                                                                            "pc_school_novb" = "Non-VB Schools per Capita"),
-                           stars = T, output = "../results/tabs/schools_expansion.tex")
+                           stars = T, output = "./results/tabs/schools_expansion.tex")
 
 # Impunity ----------------------------------------------------------------
 
@@ -66,7 +66,7 @@ tm_shape(cfir_map_st) +
     colorNA = "grey90"
   ) + tm_layout(title = "Prevalence of Counter-FIR Filing in States/UTs with Hate Crimes",
                 legend.position = c("right", "bottom")) |> 
-  tmap_save(filename = "../results/figs/counter_fir_state_map.png")
+  tmap_save(filename = "./results/figs/counter_fir_state_map.png")
 
 tmap_mode("plot")
 tm_shape(cfir_map) +
@@ -83,7 +83,7 @@ tm_shape(cfir_map) +
     colorNA = "grey90"
   ) + tm_layout(title = "Prevalence of Counter-FIR Filing in Districts with Hate Crimes",
                 legend.position = c("right", "bottom")) |> 
-  tmap_save(filename = "../results/figs/counter_fir_district_map.png")
+  tmap_save(filename = "./results/figs/counter_fir_district_map.png")
 
 counter_mod_shr <- lm_robust(counterFIR ~ vb_count + tot_pop + pc_sc + pc_st + pc_illt + pc_male + 
                                wf_male + pc_muslim + pc_christian + prim_school + tar_road + 
@@ -122,7 +122,7 @@ modelsummary::modelsummary(list("Counter FIR (All)" = counter_mod_shr, "Counter 
                                            "BJP_share_14" = "2014 BJP Voteshare (State)",
                                            "BJP_gov_17" = "BJP Gov. in Power (State)?"),
                            add_rows = data.frame("State FEs?", "Y", "Y", "N"),
-                           stars = T, output = "../results/tabs/counter_fir_models.tex")
+                           stars = T, output = "./results/tabs/counter_fir_models.tex")
 
 # Simple BJP models
 
@@ -172,7 +172,7 @@ modelsummary::modelsummary(list("BJP Vote Share 2014 (Bivariate)" = bjp_hc, "BJP
                                            "mean_time_decision" = "Avg. Days to Court Decision, 2010",
                                            "vio_crim" = "IPC Violent Crime Count",
                                         "(Intercept)"= "(Intercept)"), 
-                           stars = T, output = "../results/tabs/bjp_impunity_models.tex")
+                           stars = T, output = "./results/tabs/bjp_impunity_models.tex")
 
 # Schools --> HCs ---------------------------------------------------------
 
@@ -196,7 +196,7 @@ modelsummary::modelsummary(list("Post 2009 VB Construction" = placebo09, "Post 2
                                         "(Intercept)" = "(Intercept)"
                            ),
                            add_rows = data.frame("FEs by:", "State/UT", "State/UT"),
-                           output = "../results/tabs/schools_follow_hcs.tex")
+                           output = "./results/tabs/schools_follow_hcs.tex")
 
 # Religious Demography Change ---------------------------------------------
 
@@ -240,5 +240,5 @@ modelsummary::modelsummary(list("HC Count" = muslim_biv, "HC Count" = christian_
                                         "vio_crim" = "IPC Violent Crime Count",
                                         "(Intercept)"= "(Intercept)"),
                            add_rows = data.frame("State FEs?", "Y", "Y", "Y", "Y", 'Y'),
-                           output = "../results/tabs/change_relig_demog.tex")
+                           output = "./results/tabs/change_relig_demog.tex")
 

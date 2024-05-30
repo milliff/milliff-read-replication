@@ -21,8 +21,8 @@
 cat("SETTING OPTIONS... \n\n", sep = "")
 
 # LOAD DATA ------------------------------------
-vb    <- read_csv("../data/vb_locs.csv")
-subdi <- st_read("../data/subdistricts.json") |> st_make_valid()
+vb    <- read_csv("./data/vb_locs.csv")
+subdi <- st_read("./data/subdistricts.json") |> st_make_valid()
 
 # -------------------------------------------------------------------------
 # -------------------------------------------------------------------------
@@ -62,7 +62,7 @@ tm_shape(vb_subdi_df) +
     showNA = FALSE,
     alpha = 0.8
   ) 
-tmap_save(filename = "../results/figs/Fig3a.png")
+tmap_save(filename = "./results/figs/Fig3a.png")
 
 
 # Figure 6 ----------------------------------------------------------------
@@ -92,14 +92,14 @@ panelview(data = husk, D = "vb", index = c("id", "year"), by.timing = T, display
           xlab = "Year",
           ylab = "Subdistrict",
           legend.labs = c("No VB", "Pre VB", "Has VB"))
-ggsave(filename = "../results/figs/Fig6.png", width = 10, height = 8, dpi = 300)
+ggsave(filename = "./results/figs/Fig6.png", width = 10, height = 8, dpi = 300)
 
 
 
 # Additional Figures ---------------------------------------------------------------------
 
 tmp <- vb %>% mutate(State = factor(STATE)) %>%  select(State, final_founding) %>%  report_sample(group_by = "State")
-knitr::kable(t(tmp), caption = "Statewise Breakdown of VB School Presence", format = "latex") |> save_kable(file = "../results/tabs/vb_by_state.tex")
+knitr::kable(t(tmp), caption = "Statewise Breakdown of VB School Presence", format = "latex") |> save_kable(file = "./results/tabs/vb_by_state.tex")
 
 ggplot(vb) +
   geom_bar(aes(x = final_founding), fill = "red") +
@@ -109,5 +109,5 @@ ggplot(vb) +
        y = "Count",
        title = "State-wise count of Vidhya Bharati School Openings by Year",
        caption = "States/UTs with no Vidhya Bharati schools are omitted.")
-ggsave(filename = "../results/figs/vb_founding_by_state.png", width = 10, height = 8, dpi = 300)
+ggsave(filename = "./results/figs/vb_founding_by_state.png", width = 10, height = 8, dpi = 300)
 
