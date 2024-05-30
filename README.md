@@ -23,11 +23,11 @@ A brief introduction to the paper and its objectives.
 
 ## Installation
 
-We use the `renv` package to create an `R` "environment" that makes it easy to install (correct versions of) all the software necessary to reproduce our analysis. 
+We use the `renv` package to create an "environment" that makes it easy to install (correct versions of) all the software necessary to reproduce our analysis. 
 
 To set up the correct environment, simply:
 
-  1. Clone this repository, and;
+  1. Clone this repository
 ```
 usethis::create_from_github(
   'milliff/milliff-read-replication',
