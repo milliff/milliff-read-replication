@@ -1,0 +1,77 @@
+\begin{table}
+\caption{Models of Fatal Hate Crime Count}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+entry=none,label=none,
+note{}={+ p < 0.1, * p < 0.05, ** p < 0.01, *** p < 0.001},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]Q[]Q[]Q[]Q[]Q[]},
+column{1}={halign=l,},
+column{2}={halign=c,},
+column{3}={halign=c,},
+column{4}={halign=c,},
+column{5}={halign=c,},
+column{6}={halign=c,},
+column{7}={halign=c,},
+column{8}={halign=c,},
+column{9}={halign=c,},
+column{10}={halign=c,},
+column{11}={halign=c,},
+hline{44}={1,2,3,4,5,6,7,8,9,10,11}{solid, 0.05em, black},
+}                     %% tabularray inner close
+\toprule
+& (1) & (2) & (3) & (4) & (5) & (6) & (7) & (8) & (9) & (10) \\ \midrule %% TinyTableHeader
+VB Schools                         & \num{0.004}*** & \num{0.004}*** & \num{0.005}*** & \num{0.004}*** & \num{0.004}*** & \num{0.003}**  & \num{0.003}**  & \num{0.003}**  & \num{0.003}**  & \num{0.002}**  \\
+& (\num{0.001})  & (\num{0.001})  & (\num{0.001})  & (\num{0.001})  & (\num{0.001})  & (\num{0.001})  & (\num{0.001})  & (\num{0.001})  & (\num{0.001})  & (\num{0.001})  \\
+Population                         &                 &                 &                 & \num{0.000}*   & \num{0.000}*   & \num{0.000}**  & \num{0.000}**  & \num{0.000}**  & \num{0.000}**  & \num{0.000}**  \\
+&                 &                 &                 & (\num{0.000})  & (\num{0.000})  & (\num{0.000})  & (\num{0.000})  & (\num{0.000})  & (\num{0.000})  & (\num{0.000})  \\
+\% SC Population                  &                 &                 &                 & \num{-0.041}*  & \num{-0.031}+  & \num{-0.036}*  & \num{-0.036}*  & \num{-0.037}*  & \num{-0.027}   & \num{-0.030}*  \\
+&                 &                 &                 & (\num{0.020})  & (\num{0.018})  & (\num{0.017})  & (\num{0.017})  & (\num{0.017})  & (\num{0.017})  & (\num{0.014})  \\
+\% ST Population                  &                 &                 &                 & \num{-0.004}   & \num{0.006}    & \num{0.006}    & \num{0.006}    & \num{0.006}    & \num{0.008}    & \num{0.013}    \\
+&                 &                 &                 & (\num{0.007})  & (\num{0.007})  & (\num{0.008})  & (\num{0.008})  & (\num{0.008})  & (\num{0.008})  & (\num{0.008})  \\
+\% Illiterate Population          &                 &                 &                 & \num{-0.044}*  & \num{-0.056}** & \num{-0.047}** & \num{-0.047}** & \num{-0.047}** & \num{-0.047}** & \num{-0.027}+  \\
+&                 &                 &                 & (\num{0.017})  & (\num{0.018})  & (\num{0.018})  & (\num{0.018})  & (\num{0.018})  & (\num{0.018})  & (\num{0.014})  \\
+\% Male Population                &                 &                 &                 & \num{0.182}    & \num{0.158}    & \num{0.126}    & \num{0.125}    & \num{0.124}    & \num{0.147}    & \num{0.213}+   \\
+&                 &                 &                 & (\num{0.131})  & (\num{0.132})  & (\num{0.146})  & (\num{0.146})  & (\num{0.147})  & (\num{0.145})  & (\num{0.123})  \\
+Male Main Employment               &                 &                 &                 & \num{0.005}    & \num{0.010}    & \num{0.020}    & \num{0.020}    & \num{0.021}    & \num{0.021}    & \num{-0.002}   \\
+&                 &                 &                 & (\num{0.028})  & (\num{0.028})  & (\num{0.029})  & (\num{0.028})  & (\num{0.028})  & (\num{0.028})  & (\num{0.027})  \\
+\% Muslim Population              &                 &                 &                 &                 & \num{0.037}+   & \num{0.030}    & \num{0.030}    & \num{0.029}    & \num{0.028}    & \num{0.022}    \\
+&                 &                 &                 &                 & (\num{0.021})  & (\num{0.022})  & (\num{0.022})  & (\num{0.022})  & (\num{0.023})  & (\num{0.015})  \\
+\% Christian Population           &                 &                 &                 &                 & \num{-0.030}   & \num{-0.036}   & \num{-0.037}   & \num{-0.037}   & \num{-0.020}   & \num{-0.008}   \\
+&                 &                 &                 &                 & (\num{0.022})  & (\num{0.024})  & (\num{0.024})  & (\num{0.024})  & (\num{0.021})  & (\num{0.008})  \\
+Total Primary Schools              &                 &                 &                 &                 &                 & \num{0.000}    & \num{0.000}    & \num{0.000}    & \num{0.000}    & \num{0.000}+   \\
+&                 &                 &                 &                 &                 & (\num{0.000})  & (\num{0.000})  & (\num{0.000})  & (\num{0.000})  & (\num{0.000})  \\
+\% Settlements w/ Paved Road      &                 &                 &                 &                 &                 & \num{-0.002}   & \num{-0.002}   & \num{-0.002}   & \num{0.000}    & \num{0.000}    \\
+&                 &                 &                 &                 &                 & (\num{0.006})  & (\num{0.006})  & (\num{0.006})  & (\num{0.006})  & (\num{0.007})  \\
+\% Settlements w/ Improved Road   &                 &                 &                 &                 &                 & \num{-0.029}*  & \num{-0.029}*  & \num{-0.029}*  & \num{-0.026}*  & \num{-0.021}** \\
+&                 &                 &                 &                 &                 & (\num{0.012})  & (\num{0.012})  & (\num{0.011})  & (\num{0.012})  & (\num{0.007})  \\
+Distance to Town > 100k            &                 &                 &                 &                 &                 & \num{0.000}    & \num{0.000}    & \num{0.000}    & \num{0.000}    & \num{0.000}    \\
+&                 &                 &                 &                 &                 & (\num{0.000})  & (\num{0.000})  & (\num{0.000})  & (\num{0.000})  & (\num{0.000})  \\
+Distance to Town > 500k            &                 &                 &                 &                 &                 & \num{0.000}    & \num{0.000}    & \num{0.000}    & \num{0.000}    & \num{0.000}    \\
+&                 &                 &                 &                 &                 & (\num{0.000})  & (\num{0.000})  & (\num{0.000})  & (\num{0.000})  & (\num{0.000})  \\
+Avg. Nightlight Emission, 2008     &                 &                 &                 &                 &                 & \num{0.000}    & \num{0.000}    & \num{0.000}    & \num{0.000}    & \num{0.000}    \\
+&                 &                 &                 &                 &                 & (\num{0.001})  & (\num{0.001})  & (\num{0.001})  & (\num{0.001})  & (\num{0.001})  \\
+Avg. Days to Court Decision, 2010  &                 &                 &                 &                 &                 &                 & \num{0.000}    & \num{0.000}    & \num{0.000}    & \num{0.000}+   \\
+&                 &                 &                 &                 &                 &                 & (\num{0.000})  & (\num{0.000})  & (\num{0.000})  & (\num{0.000})  \\
+IPC Violent Crime Count            &                 &                 &                 &                 &                 &                 &                 & \num{0.000}    & \num{0.000}    & \num{0.000}    \\
+&                 &                 &                 &                 &                 &                 &                 & (\num{0.000})  & (\num{0.000})  & (\num{0.000})  \\
+Change in Muslim Pop. 2001-2011    &                 &                 &                 &                 &                 &                 &                 &                 & \num{-0.041}   & \num{0.000}    \\
+&                 &                 &                 &                 &                 &                 &                 &                 & (\num{0.379})  & (\num{0.364})  \\
+Change in Christian Pop. 2001-2011 &                 &                 &                 &                 &                 &                 &                 &                 & \num{-0.001}   & \num{0.005}    \\
+&                 &                 &                 &                 &                 &                 &                 &                 & (\num{0.035})  & (\num{0.031})  \\
+2014 BJP Voteshare (State)         &                 &                 &                 &                 &                 &                 &                 &                 &                 & \num{0.000}    \\
+&                 &                 &                 &                 &                 &                 &                 &                 &                 & (\num{0.000})  \\
+BJP Gov. in Power (State)?         &                 &                 &                 &                 &                 &                 &                 &                 &                 & \num{-0.002}   \\
+&                 &                 &                 &                 &                 &                 &                 &                 &                 & (\num{0.006})  \\
+Num.Obs.                           & \num{6042}     & \num{6042}     & \num{6042}     & \num{6038}     & \num{6038}     & \num{5724}     & \num{5724}     & \num{5724}     & \num{5543}     & \num{5543}     \\
+R2                                 & \num{0.025}    & \num{0.025}    & \num{0.044}    & \num{0.068}    & \num{0.069}    & \num{0.073}    & \num{0.073}    & \num{0.073}    & \num{0.067}    & \num{0.052}    \\
+R2 Adj.                            & \num{0.025}    & \num{0.025}    & \num{0.039}    & \num{0.062}    & \num{0.063}    & \num{0.066}    & \num{0.065}    & \num{0.065}    & \num{0.059}    & \num{0.048}    \\
+AIC                                & \num{-7718.9}  & \num{-7718.9}  & \num{-7844.3}  & \num{-7975.0}  & \num{-7978.9}  & \num{-7732.1}  & \num{-7730.3}  & \num{-7728.4}  & \num{-7752.3}  & \num{-7656.7}  \\
+BIC                                & \num{-7698.8}  & \num{-7698.8}  & \num{-7830.8}  & \num{-7921.3}  & \num{-7911.8}  & \num{-7625.7}  & \num{-7617.2}  & \num{-7608.7}  & \num{-7619.9}  & \num{-7504.4}  \\
+RMSE                               & \num{0.13}     & \num{0.13}     & \num{0.13}     & \num{0.12}     & \num{0.12}     & \num{0.12}     & \num{0.12}     & \num{0.12}     & \num{0.12}     & \num{0.12}     \\
+Std.Errors                         &                 & by: district    & by: district    & by: district    & by: district    & by: district    & by: district    & by: district    & by: district    & by: district    \\
+State FEs?                         & N               & N               & Y               & Y               & Y               & Y               & Y               & Y               & Y               & N               \\
+\bottomrule
+\end{talltblr}
+\end{table}

@@ -1,0 +1,68 @@
+\begin{table}
+\caption{Correlation between VB Schools and Attempted Lynching Count, Adjusting for Recent Change in Religious Demography}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+entry=none,label=none,
+note{}={+ p < 0.1, * p < 0.05, ** p < 0.01, *** p < 0.001},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]},
+column{1}={halign=l,},
+column{2}={halign=c,},
+column{3}={halign=c,},
+column{4}={halign=c,},
+column{5}={halign=c,},
+column{6}={halign=c,},
+hline{40}={1,2,3,4,5,6}{solid, 0.05em, black},
+}                     %% tabularray inner close
+\toprule
+& HC Count & HC Count  & HC Count   & Fatal HC Count & Counter-FIR Count \\ \midrule %% TinyTableHeader
+2001-2011 Change in Muslim Pop.    & \num{0.737}   &                & \num{0.509}    & \num{-0.041}   & \num{-0.122}  \\
+& (\num{0.730}) &                & (\num{0.800})  & (\num{0.379})  & (\num{0.380}) \\
+2001-2011 Change in Christian Pop. &                & \num{-0.049}+ & \num{0.008}    & \num{-0.001}   & \num{-0.019}  \\
+&                & (\num{0.027}) & (\num{0.084})  & (\num{0.035})  & (\num{0.034}) \\
+VB Schools                         &                &                & \num{0.008}*** & \num{0.003}**  & \num{0.003}*  \\
+&                &                & (\num{0.002})  & (\num{0.001})  & (\num{0.001}) \\
+Population                         &                &                & \num{0.000}*** & \num{0.000}**  & \num{0.000}*  \\
+&                &                & (\num{0.000})  & (\num{0.000})  & (\num{0.000}) \\
+\% SC Population                  &                &                & \num{-0.102}+  & \num{-0.027}   & \num{-0.034}+ \\
+&                &                & (\num{0.057})  & (\num{0.017})  & (\num{0.019}) \\
+\% ST Population                  &                &                & \num{0.059}**  & \num{0.008}    & \num{0.002}   \\
+&                &                & (\num{0.020})  & (\num{0.008})  & (\num{0.008}) \\
+\% Illiterate Population          &                &                & \num{-0.166}** & \num{-0.047}** & \num{-0.010}  \\
+&                &                & (\num{0.052})  & (\num{0.018})  & (\num{0.019}) \\
+\% Male Population                &                &                & \num{-0.115}   & \num{0.147}    & \num{-0.054}  \\
+&                &                & (\num{0.393})  & (\num{0.145})  & (\num{0.143}) \\
+Male Main Employment               &                &                & \num{0.113}    & \num{0.021}    & \num{0.012}   \\
+&                &                & (\num{0.073})  & (\num{0.028})  & (\num{0.026}) \\
+\% Muslim Population              &                &                & \num{0.022}    & \num{0.028}    & \num{-0.002}  \\
+&                &                & (\num{0.043})  & (\num{0.023})  & (\num{0.019}) \\
+\% Christian Population           &                &                & \num{-0.018}   & \num{-0.020}   & \num{-0.014}  \\
+&                &                & (\num{0.049})  & (\num{0.021})  & (\num{0.020}) \\
+Total Primary Schools              &                &                & \num{0.000}**  & \num{0.000}    & \num{0.000}   \\
+&                &                & (\num{0.000})  & (\num{0.000})  & (\num{0.000}) \\
+\% Settlements w/ paved road      &                &                & \num{0.013}    & \num{0.000}    & \num{-0.002}  \\
+&                &                & (\num{0.020})  & (\num{0.006})  & (\num{0.006}) \\
+\% Settlements w/ improved road   &                &                & \num{-0.096}*  & \num{-0.026}*  & \num{-0.030}* \\
+&                &                & (\num{0.038})  & (\num{0.012})  & (\num{0.012}) \\
+Distance to town > 100k            &                &                & \num{0.000}    & \num{0.000}    & \num{0.000}+  \\
+&                &                & (\num{0.000})  & (\num{0.000})  & (\num{0.000}) \\
+Distance to town > 500k            &                &                & \num{0.000}    & \num{0.000}    & \num{0.000}   \\
+&                &                & (\num{0.000})  & (\num{0.000})  & (\num{0.000}) \\
+Average Nightlight Emission, 2008  &                &                & \num{-0.001}   & \num{0.000}    & \num{0.000}   \\
+&                &                & (\num{0.002})  & (\num{0.001})  & (\num{0.001}) \\
+Avg. Days to Court Decision, 2010  &                &                & \num{0.000}    & \num{0.000}    & \num{0.000}   \\
+&                &                & (\num{0.000})  & (\num{0.000})  & (\num{0.000}) \\
+IPC Violent Crime Count            &                &                & \num{0.000}    & \num{0.000}    & \num{0.000}   \\
+&                &                & (\num{0.000})  & (\num{0.000})  & (\num{0.000}) \\
+Num.Obs.                           & \num{5786}    & \num{5786}    & \num{5543}     & \num{5543}     & \num{5543}    \\
+R2                                 & \num{0.023}   & \num{0.022}   & \num{0.133}    & \num{0.067}    & \num{0.070}   \\
+R2 Adj.                            & \num{0.017}   & \num{0.016}   & \num{0.125}    & \num{0.059}    & \num{0.061}   \\
+AIC                                & \num{3511.0}  & \num{3517.1}  & \num{2691.7}   & \num{-7752.3}  & \num{-8594.2} \\
+BIC                                & \num{3524.4}  & \num{3530.4}  & \num{2824.1}   & \num{-7619.9}  & \num{-8461.8} \\
+RMSE                               & \num{0.33}    & \num{0.33}    & \num{0.31}     & \num{0.12}     & \num{0.11}    \\
+Std.Errors                         & by: district   & by: district   & by: district    & by: district    & by: district   \\
+State FEs?                         & Y              & Y              & Y               & Y               & Y              \\
+\bottomrule
+\end{talltblr}
+\end{table}

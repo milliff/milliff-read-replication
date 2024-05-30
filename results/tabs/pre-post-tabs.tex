@@ -1,0 +1,34 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+entry=none,label=none,
+note{}={+ p < 0.1, * p < 0.05, ** p < 0.01, *** p < 0.001},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]},
+column{1}={halign=l,},
+column{2}={halign=c,},
+column{3}={halign=c,},
+column{4}={halign=c,},
+column{5}={halign=c,},
+hline{8}={1,2,3,4,5}{solid, 0.05em, black},
+}                     %% tabularray inner close
+\toprule
+& Interaction (Dist. FE) & Interaction (Unit FE) & Pre-Period & Post-Period \\ \midrule %% TinyTableHeader
+VB School Count (post-2014) & \num{0.014}***  &                  & \num{0.000}   & \num{0.010}*** \\
+& (\num{0.003})   &                  & (\num{0.000}) & (\num{0.003})  \\
+Pre-2014 Indicator          & \num{-0.019}*** & \num{-0.019}*** &                &                 \\
+& (\num{0.004})   & (\num{0.004})   &                &                 \\
+VB Schools x pre-2014       & \num{-0.011}*** & \num{-0.011}*** &                &                 \\
+& (\num{0.002})   & (\num{0.002})   &                &                 \\
+Num.Obs.                    & \num{12084}     & \num{12084}     & \num{6042}    & \num{6042}     \\
+R2                          & \num{0.151}     & \num{0.539}     & \num{0.132}   & \num{0.306}    \\
+R2 Adj.                     & \num{0.108}     & \num{0.078}     & \num{0.039}   & \num{0.232}    \\
+AIC                         & \num{-1986.3}   &                  &                &                 \\
+BIC                         & \num{-1956.7}   &                  &                &                 \\
+RMSE                        & \num{0.22}      &                  &                &                 \\
+Std.Errors                  & by: id.x         &                  & by: id.x       & by: id.x        \\
+FEs By:                     & District         & Subdistrict      & District       & District        \\
+\bottomrule
+\end{talltblr}
+\end{table}

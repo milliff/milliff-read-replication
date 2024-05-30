@@ -1,0 +1,32 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+entry=none,label=none,
+note{}={+ p < 0.1, * p < 0.05, ** p < 0.01, *** p < 0.001},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]},
+column{1}={halign=l,},
+column{2}={halign=c,},
+column{3}={halign=c,},
+hline{8}={1,2,3}{solid, 0.05em, black},
+}                     %% tabularray inner close
+\toprule
+& Post 2009 VB Construction & Post 2014 VB Construction \\ \midrule %% TinyTableHeader
+VB Founded post-2009    & \num{-0.015}   &                  \\
+& (\num{0.017})  &                  \\
+VB Founded post-2014    &                 & \num{-0.048}*** \\
+&                 & (\num{0.011})   \\
+VB School Count (Total) & \num{0.016}*** & \num{0.016}***  \\
+& (\num{0.003})  & (\num{0.003})   \\
+Num.Obs.                & \num{6042}     & \num{6042}      \\
+R2                      & \num{0.078}    & \num{0.078}     \\
+R2 Adj.                 & \num{0.072}    & \num{0.072}     \\
+AIC                     & \num{3878.5}   & \num{3878.0}    \\
+BIC                     & \num{3898.6}   & \num{3898.1}    \\
+RMSE                    & \num{0.33}     & \num{0.33}      \\
+Std.Errors              & by: district    & by: district     \\
+FEs by:                 & State/UT        & State/UT         \\
+\bottomrule
+\end{talltblr}
+\end{table}

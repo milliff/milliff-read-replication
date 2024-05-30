@@ -1,0 +1,58 @@
+\begin{table}
+\caption{VB Schools and Hate Crime Counts, Zero-Inflated Models with State FEs}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+entry=none,label=none,
+note{}={+ p < 0.1, * p < 0.05, ** p < 0.01, *** p < 0.001},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]},
+column{1}={halign=l,},
+column{2}={halign=c,},
+column{3}={halign=c,},
+hline{36}={1,2,3}{solid, 0.05em, black},
+}                     %% tabularray inner close
+\toprule
+& Negative Binomial & Poisson \\ \midrule %% TinyTableHeader
+VB Schools                        & \num{0.066}***  & \num{0.045}***  \\
+& (\num{0.010})   & (\num{0.006})   \\
+Population                        & \num{0.000}***  & \num{0.000}     \\
+& (\num{0.000})   & (\num{0.000})   \\
+\% SC Population                 & \num{-4.130}*   & \num{-4.243}**  \\
+& (\num{1.626})   & (\num{1.350})   \\
+\% ST Population                 & \num{-1.504}    & \num{-1.607}+   \\
+& (\num{0.989})   & (\num{0.868})   \\
+\% Illiterate Population         & \num{-6.523}*** & \num{-6.505}*** \\
+& (\num{1.272})   & (\num{1.008})   \\
+\% Male Population               & \num{14.385}+   & \num{12.128}+   \\
+& (\num{8.285})   & (\num{6.629})   \\
+Male Main Employment              & \num{4.530}*    & \num{5.092}**   \\
+& (\num{2.269})   & (\num{1.865})   \\
+\% Muslim Population             & \num{2.114}**   & \num{2.533}***  \\
+& (\num{0.755})   & (\num{0.598})   \\
+\% Christian Population          & \num{0.232}     & \num{0.515}     \\
+& (\num{1.626})   & (\num{1.370})   \\
+Total Primary Schools             & \num{0.003}*    & \num{0.004}***  \\
+& (\num{0.001})   & (\num{0.001})   \\
+\% Settlements w/ Paved Road     & \num{1.180}+    & \num{1.782}***  \\
+& (\num{0.636})   & (\num{0.533})   \\
+\% Settlements w/ Improved Road  & \num{-1.146}*   & \num{-1.237}**  \\
+& (\num{0.534})   & (\num{0.417})   \\
+Distance to Town > 100k           & \num{-0.006}    & \num{-0.007}+   \\
+& (\num{0.005})   & (\num{0.004})   \\
+Distance to Town > 500k           & \num{0.005}*    & \num{0.005}**   \\
+& (\num{0.002})   & (\num{0.002})   \\
+Avg. Nightlight Emission, 2008    & \num{0.032}     & \num{0.042}**   \\
+& (\num{0.020})   & (\num{0.014})   \\
+Avg. Days to Court Decision, 2010 & \num{0.001}*    & \num{0.001}***  \\
+& (\num{0.000})   & (\num{0.000})   \\
+IPC Violent Crime Count           & \num{0.000}     & \num{0.000}     \\
+& (\num{0.000})   & (\num{0.000})   \\
+Num.Obs.                          & \num{5724}      & \num{5724}      \\
+AIC                               & \num{1400.3}    & \num{1500.7}    \\
+BIC                               & \num{1739.6}    & \num{1833.3}    \\
+Log.Lik.                          & \num{-649.148}  & \num{-700.361}  \\
+RMSE                              & \num{1.02}      & \num{0.30}      \\
+\bottomrule
+\end{talltblr}
+\end{table}

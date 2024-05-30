@@ -1,0 +1,282 @@
+Date,State,Municipality,Context/Bias Indicator,Fatal,Vandalism,FIR,CounterFIR,yearmon,loc,lon,lat
+2014-10-24T00:00:00Z,Delhi,East Delhi,Communal clashes,0,0,1,0,Oct 2014,"East Delhi, Delhi",77.29562729999999,28.6279559
+2014-10-25T00:00:00Z,Delhi,East Delhi,Communal clashes,0,0,1,0,Oct 2014,"East Delhi, Delhi",77.29562729999999,28.6279559
+2015-01-16T00:00:00Z,Karnataka,Dakshina Kannada,Communal clashes,0,1,1,0,Jan 2015,"Dakshina Kannada, Karnataka",75.2479061,12.8437814
+2016-10-17T00:00:00Z,West Bengal,North 24 Paraganas,Communal clashes,0,1,1,0,Oct 2016,"North 24 Paraganas, West Bengal",88.402895,22.6168099
+2017-12-08T00:00:00Z,Karnataka,Uttara Kannada,Communal clashes,1,0,1,0,Dec 2017,"Uttara Kannada, Karnataka",74.6868815,14.7937065
+2018-01-12T00:00:00Z,Uttar Pradesh,Allahabad,Communal clashes,0,0,1,0,Jan 2018,"Allahabad, Uttar Pradesh",81.846311,25.4358011
+2018-01-26T00:00:00Z,Uttar Pradesh,Kasganj,Communal clashes,1,0,1,0,Jan 2018,"Kasganj, Uttar Pradesh",78.64610979999999,27.808529
+2018-03-05T00:00:00Z,Rajasthan,Tonk,Communal clashes,0,0,0,0,Mar 2018,"Tonk, Rajasthan",75.7962852,26.1659063
+2018-03-17T00:00:00Z,Bihar,Bhagalpur,Communal clashes,0,1,1,0,Mar 2018,"Bhagalpur, Bihar",86.9842256,25.242453
+2018-03-18T00:00:00Z,Rajasthan,Tonk,Communal clashes,0,1,0,0,Mar 2018,"Tonk, Rajasthan",75.7962852,26.1659063
+2018-03-24T00:00:00Z,Bihar,Siwan,Communal clashes,0,1,1,0,Mar 2018,"Siwan, Bihar",84.3599953,26.2243204
+2018-03-25T00:00:00Z,Bihar,Aurangabad,Communal clashes,0,1,1,0,Mar 2018,"Aurangabad, Bihar",84.3542049,24.7033198
+2018-03-25T00:00:00Z,West Bengal,Purulia,Communal clashes,1,0,1,0,Mar 2018,"Purulia, West Bengal",86.3616405,23.3322026
+2018-03-27T00:00:00Z,Bihar,Samastipur,Communal clashes,0,1,1,0,Mar 2018,"Samastipur, Bihar",85.7868233,25.8560271
+2018-03-27T00:00:00Z,Bihar,Munger,Communal clashes,0,1,0,0,Mar 2018,"Munger, Bihar",86.47339029999999,25.3707993
+2018-03-28T00:00:00Z,Bihar,Sheikhpura,Communal clashes,0,1,1,0,Mar 2018,"Sheikhpura, Bihar",85.86289149999999,25.1416937
+2018-03-28T00:00:00Z,Bihar,Nalanda,Communal clashes,0,1,1,0,Mar 2018,"Nalanda, Bihar",85.47880649999999,25.2621826
+2018-03-28T00:00:00Z,West Bengal,Asansol,Communal clashes,1,0,1,0,Mar 2018,"Asansol, West Bengal",86.9660638,23.6888636
+2018-03-30T00:00:00Z,Bihar,Nawada,Communal clashes,0,1,1,0,Mar 2018,"Nawada, Bihar",85.54345719999999,24.8866859
+2018-03-31T00:00:00Z,Rajasthan,Pali,Communal clashes,0,0,1,1,Mar 2018,"Pali, Rajasthan",73.331147,25.7780623
+2018-04-01T00:00:00Z,Uttar Pradesh,Fatehpur,Communal clashes,1,1,0,0,Apr 2018,"Fatehpur, Uttar Pradesh",80.7996035,25.9209503
+2018-05-06T00:00:00Z,Tamil Nadu,Theni,Communal clashes,0,1,1,0,May 2018,"Theni, Tamil Nadu",77.4735441,10.0079322
+2018-05-11T00:00:00Z,Maharashtra,Aurangabad,Communal clashes,1,1,1,0,May 2018,"Aurangabad, Maharashtra",75.3433139,19.8761653
+2018-07-03T00:00:00Z,Uttar Pradesh,Bareilly,Communal clashes,0,1,1,0,Jul 2018,"Bareilly, Uttar Pradesh",79.4304381,28.3670355
+2018-08-21T00:00:00Z,Uttar Pradesh,Muzaffarnagar,Communal clashes,0,0,1,1,Aug 2018,"Muzaffarnagar, Uttar Pradesh",77.7085091,29.4726817
+2018-08-22T00:00:00Z,Gujarat,Kutch,Communal clashes,0,0,1,0,Aug 2018,"Kutch, Gujarat",69.8597406,23.7337326
+2018-08-25T00:00:00Z,Uttar Pradesh,Shahjahanpur,Communal clashes,0,1,1,0,Aug 2018,"Shahjahanpur, Uttar Pradesh",79.9147268,27.8753399
+2018-10-20T00:00:00Z,Bihar,Sitamarhi,Communal clashes,1,0,1,0,Oct 2018,"Sitamarhi, Bihar",85.5012971,26.5886976
+2018-11-30T00:00:00Z,Delhi,South Delhi,Communal clashes,0,0,1,0,Nov 2018,"South Delhi, Delhi",77.18728569999999,28.4816551
+2010-02-12T00:00:00Z,Himachal Pradesh,Shimla,Cow protection,0,1,1,1,Feb 2010,"Shimla, Himachal Pradesh",77.17340329999999,31.1048145
+2012-06-10T00:00:00Z,Punjab,Mansa,Cow protection,0,1,1,0,Jun 2012,"Mansa, Punjab",75.3936808,29.9995069
+2013-08-20T00:00:00Z,Madhya Pradesh,Indore,Cow protection,0,1,1,1,Aug 2013,"Indore, Madhya Pradesh",75.8577258,22.7195687
+2014-10-07T00:00:00Z,Bihar,Kishanganj,Cow protection,0,1,0,0,Oct 2014,"Kishanganj, Bihar",87.9450379,26.0982167
+2015-05-30T00:00:00Z,Rajasthan,Nagaur,Cow protection,1,0,1,0,May 2015,"Nagaur, Rajasthan",73.7493272,27.1983368
+2015-08-02T00:00:00Z,Uttar Pradesh,Gautam Buddha Nagar,Cow protection,1,0,0,1,Aug 2015,"Gautam Buddha Nagar, Uttar Pradesh",77.55076199999999,28.358983
+2015-08-09T00:00:00Z,Haryana,Panipat,Cow protection,0,0,0,1,Aug 2015,"Panipat, Haryana",76.9635023,29.3909464
+2015-10-06T00:00:00Z,Karnataka,Udupi,Cow protection,0,0,1,1,Oct 2015,"Udupi, Karnataka",74.7421427,13.3408807
+2015-10-08T00:00:00Z,Jammu and Kashmir,Srinagar,Cow protection,0,0,0,0,Oct 2015,"Srinagar, Jammu and Kashmir",74.7972825,34.0836708
+2015-10-09T00:00:00Z,Uttar Pradesh,Mainpuri,Cow protection,0,1,1,0,Oct 2015,"Mainpuri, Uttar Pradesh",79.02516589999999,27.2281937
+2015-10-11T00:00:00Z,Jammu and Kashmir,Udhampur,Cow protection,1,0,0,0,Oct 2015,"Udhampur, Jammu and Kashmir",75.1416173,32.9159847
+2015-10-14T00:00:00Z,Himachal Pradesh,Sirmaur,Cow protection,1,0,1,1,Oct 2015,"Sirmaur, Himachal Pradesh",77.4701972,30.5628455
+2015-10-19T00:00:00Z,Delhi,New Delhi,Cow protection,0,0,1,0,Oct 2015,"New Delhi, Delhi",77.2090212,28.6139391
+2015-11-02T00:00:00Z,Manipur,Imphal East,Cow protection,1,0,0,0,Nov 2015,"Imphal East, Manipur",93.9674371,24.7806536
+2015-12-03T00:00:00Z,Haryana,Palwal,Cow protection,0,0,1,1,Dec 2015,"Palwal, Haryana",77.3259878,28.1472852
+2015-12-09T00:00:00Z,Haryana,Ambala,Cow protection,1,0,1,0,Dec 2015,"Ambala, Haryana",76.782122,30.3752011
+2016-01-13T00:00:00Z,Madhya Pradesh,Harda,Cow protection,0,0,1,1,Jan 2016,"Harda, Madhya Pradesh",77.0889583,22.3466702
+2016-03-18T00:00:00Z,Jharkhand,Latehar,Cow protection,1,0,1,0,Mar 2016,"Latehar, Jharkhand",84.5091102,23.7463215
+2016-03-27T00:00:00Z,Uttar Pradesh,Kurukshetra,Cow protection,1,0,1,0,Mar 2016,"Kurukshetra, Uttar Pradesh",76.878282,29.9695121
+2016-03-28T00:00:00Z,Punjab,Rupnagar,Cow protection,0,0,0,1,Mar 2016,"Rupnagar, Punjab",76.5230961,30.9661003
+2016-05-06T00:00:00Z,Haryana,Gurgaon,Cow protection,0,0,0,1,May 2016,"Gurgaon, Haryana",77.0266383,28.4594965
+2016-06-01T00:00:00Z,Uttar Pradesh,Firozabad,Cow protection,0,1,1,1,Jun 2016,"Firozabad, Uttar Pradesh",78.3957331,27.1591961
+2016-06-10T00:00:00Z,Haryana,Faridabad,Cow protection,0,0,1,1,Jun 2016,"Faridabad, Haryana",77.3177894,28.4089123
+2016-07-26T00:00:00Z,Madhya Pradesh,Mandsaur,Cow protection,0,0,1,1,Jul 2016,"Mandsaur, Madhya Pradesh",75.0679018,24.0734356
+2016-07-31T00:00:00Z,Uttar Pradesh,Muzaffarnagar,Cow protection,0,1,1,1,Jul 2016,"Muzaffarnagar, Uttar Pradesh",77.7085091,29.4726817
+2016-08-23T00:00:00Z,Gujarat,Surat,Cow protection,0,0,1,0,Aug 2016,"Surat, Gujarat",72.83106070000001,21.1702401
+2016-09-09T00:00:00Z,Telangana,Rangareddy,Cow protection,0,0,1,0,Sep 2016,"Rangareddy, Telangana",77.8367282,17.3891379
+2016-09-10T00:00:00Z,Karnataka,Madikeri,Cow protection,0,0,1,1,Sep 2016,"Madikeri, Karnataka",75.7381856,12.4244205
+2016-09-11T00:00:00Z,Haryana,Mewat,Cow protection,1,0,0,0,Sep 2016,"Mewat, Haryana",77.0564464,28.0106916
+2016-09-13T00:00:00Z,Gujarat,Ahmedabad,Cow protection,1,0,1,1,Sep 2016,"Ahmedabad, Gujarat",72.5713621,23.022505
+2016-09-15T00:00:00Z,Delhi,North West Delhi,Cow protection,0,0,1,0,Sep 2016,"North West Delhi, Delhi",77.0685134,28.7186211
+2016-09-16T00:00:00Z,Karnataka,Bangalore Rural,Cow protection,0,0,0,1,Sep 2016,"Bangalore Rural, Karnataka",77.8524505,13.1535064
+2016-11-17T00:00:00Z,Karnataka,Dakshina Kannada,Cow protection,0,0,1,0,Nov 2016,"Dakshina Kannada, Karnataka",75.2479061,12.8437814
+2017-01-09T00:00:00Z,Jammu and Kashmir,Kathua,Cow protection,0,0,0,0,Jan 2017,"Kathua, Jammu and Kashmir",75.5173465,32.3863082
+2017-03-18T00:00:00Z,Rajasthan,Jaipur,Cow protection,0,0,0,0,Mar 2017,"Jaipur, Rajasthan",75.7872709,26.9124336
+2017-03-22T00:00:00Z,Uttar Pradesh,Amroha,Cow protection,1,0,1,1,Mar 2017,"Amroha, Uttar Pradesh",78.46731799999999,28.9051778
+2017-04-01T00:00:00Z,Rajasthan,Alwar,Cow protection,1,0,1,1,Apr 2017,"Alwar, Rajasthan",76.6345735,27.5529907
+2017-04-19T00:00:00Z,Kerala,Ernakulam,Cow protection,0,1,1,0,Apr 2017,"Ernakulam, Kerala",76.2998842,9.9816358
+2017-04-20T00:00:00Z,Jammu and Kashmir,Reasi,Cow protection,0,0,1,1,Apr 2017,"Reasi, Jammu and Kashmir",74.83644129999999,33.0803564
+2017-04-24T00:00:00Z,Delhi,East Delhi,Cow protection,0,0,1,1,Apr 2017,"East Delhi, Delhi",77.29562729999999,28.6279559
+2017-05-01T00:00:00Z,Assam,Nagaon,Cow protection,1,0,0,0,May 2017,"Nagaon, Assam",92.6838111,26.348009
+2017-05-26T00:00:00Z,Maharashtra,Washim,Cow protection,0,0,1,1,May 2017,"Washim, Maharashtra",77.1312586,20.1119123
+2017-06-06T00:00:00Z,Jharkhand,Dhanbad,Cow protection,0,0,1,0,Jun 2017,"Dhanbad, Jharkhand",86.43038589999999,23.7956531
+2017-06-20T00:00:00Z,Uttar Pradesh,Etah,Cow protection,0,0,0,1,Jun 2017,"Etah, Uttar Pradesh",78.6654148,27.5625106
+2017-06-26T00:00:00Z,Jharkhand,Giridih,Cow protection,0,0,1,0,Jun 2017,"Giridih, Jharkhand",86.2996368,24.19135
+2017-06-28T00:00:00Z,Jharkhand,Ramgarh,Cow protection,1,0,1,0,Jun 2017,"Ramgarh, Jharkhand",85.5124209,23.6362593
+2017-07-12T00:00:00Z,Maharashtra,Nagpur,Cow protection,0,0,1,0,Jul 2017,"Nagpur, Maharashtra",79.0881546,21.1458004
+2017-07-18T00:00:00Z,Jharkhand,Dhanbad,Cow protection,0,0,0,0,Jul 2017,"Dhanbad, Jharkhand",86.43038589999999,23.7956531
+2017-08-03T00:00:00Z,Bihar,Bhojpur,Cow protection,0,0,0,1,Aug 2017,"Bhojpur, Bihar",84.5222189,25.466155
+2017-08-17T00:00:00Z,Bihar,West Champaran,Cow protection,0,0,0,1,Aug 2017,"West Champaran, Bihar",84.3542049,27.1543104
+2017-08-19T00:00:00Z,Jharkhand,Garhwa,Cow protection,1,0,1,1,Aug 2017,"Garhwa, Jharkhand",83.7995617,24.1548982
+2017-08-25T00:00:00Z,Uttar Pradesh,Bulandshahr,Cow protection,0,1,1,1,Aug 2017,"Bulandshahr, Uttar Pradesh",77.8498292,28.406963
+2017-08-26T00:00:00Z,Jammu and Kashmir,Jammu,Cow protection,0,0,0,0,Aug 2017,"Jammu, Jammu and Kashmir",74.8570259,32.7266016
+2017-08-27T00:00:00Z,West Bengal,Jalpaiguri,Cow protection,1,0,1,0,Aug 2017,"Jalpaiguri, West Bengal",88.7195567,26.5214579
+2017-09-02T00:00:00Z,Bihar,Araria,Cow protection,0,0,1,0,Sep 2017,"Araria, Bihar",87.4528067,26.1324689
+2017-09-02T00:00:00Z,Jharkhand,Giridh,Cow protection,0,0,0,0,Sep 2017,"Giridh, Jharkhand",86.2863319,24.1825662
+2017-09-02T00:00:00Z,Haryana,Faridabad,Cow protection,0,0,1,0,Sep 2017,"Faridabad, Haryana",77.3177894,28.4089123
+2017-09-04T00:00:00Z,Bihar,Bhojpur,Cow protection,0,0,0,1,Sep 2017,"Bhojpur, Bihar",84.5222189,25.466155
+2017-10-13T00:00:00Z,Haryana,Faridabad,Cow protection,0,0,1,1,Oct 2017,"Faridabad, Haryana",77.3177894,28.4089123
+2017-11-10T00:00:00Z,Rajasthan,Alwar,Cow protection,1,0,1,1,Nov 2017,"Alwar, Rajasthan",76.6345735,27.5529907
+2017-12-23T00:00:00Z,Rajasthan,Alwar,Cow protection,0,0,0,1,Dec 2017,"Alwar, Rajasthan",76.6345735,27.5529907
+2018-01-16T00:00:00Z,Uttar Pradesh,Meerut,Cow protection,0,0,0,1,Jan 2018,"Meerut, Uttar Pradesh",77.7064137,28.9844618
+2018-03-07T00:00:00Z,Karnataka,Dakshina Kannada,Cow protection,0,1,1,1,Mar 2018,"Dakshina Kannada, Karnataka",75.2479061,12.8437814
+2018-04-17T00:00:00Z,Jharkhand,Koderma,Cow protection,0,1,1,0,Apr 2018,"Koderma, Jharkhand",85.59336449999999,24.4676805
+2018-05-18T00:00:00Z,Madhya Pradesh,Satna,Cow protection,1,0,1,1,May 2018,"Satna, Madhya Pradesh",80.8322428,24.6005075
+2018-05-30T00:00:00Z,Karnataka,Udipi,Cow protection,1,0,1,1,May 2018,"Udipi, Karnataka",74.7421427,13.3408807
+2018-06-13T00:00:00Z,Jharkhand,Godda,Cow protection,1,0,1,1,Jun 2018,"Godda, Jharkhand",87.2135177,24.8255215
+2018-06-18T00:00:00Z,Uttar Pradesh,Hapur,Cow protection,1,0,1,0,Jun 2018,"Hapur, Uttar Pradesh",77.7758825,28.73057979999999
+2018-07-20T00:00:00Z,Rajasthan,Alwar,Cow protection,1,0,1,0,Jul 2018,"Alwar, Rajasthan",76.6345735,27.5529907
+2018-08-21T00:00:00Z,Gujarat,Gandhinagar,Cow protection,0,0,1,1,Aug 2018,"Gandhinagar, Gujarat",72.63694149999999,23.2156354
+2018-08-22T00:00:00Z,Haryana,Rohtak,Cow protection,0,1,0,1,Aug 2018,"Rohtak, Haryana",76.606611,28.8955152
+2018-08-26T00:00:00Z,Uttar Pradesh,Moradabad,Cow protection,0,0,1,0,Aug 2018,"Moradabad, Uttar Pradesh",78.7733286,28.8386481
+2018-08-29T00:00:00Z,Uttar Pradesh,Bareilly,Cow protection,1,0,1,1,Aug 2018,"Bareilly, Uttar Pradesh",79.4304381,28.3670355
+2018-08-29T00:00:00Z,Assam,Darrang,Cow protection,1,0,1,0,Aug 2018,"Darrang, Assam",92.02731899999999,26.4522876
+2018-11-18T00:00:00Z,Gujarat,Ahmedabad,Cow protection,0,0,1,1,Nov 2018,"Ahmedabad, Gujarat",72.5713621,23.022505
+2016-06-02T00:00:00Z,Haryana,Karnal,Cow protection,1,0,1,0,Jun 2016,"Karnal, Haryana",76.9904825,29.6856929
+2010-05-25T00:00:00Z,Haryana,Faridabad,Insult to religion or blasphemy,0,1,0,0,May 2010,"Faridabad, Haryana",77.3177894,28.4089123
+2010-07-04T00:00:00Z,Kerala,Thodupuzha,Insult to religion or blasphemy,0,0,1,0,Jul 2010,"Thodupuzha, Kerala",76.7184061,9.8959339
+2013-02-19T00:00:00Z,West Bengal,South 24 Paraganas,Insult to religion or blasphemy,1,0,0,0,Feb 2013,"South 24 Paraganas, West Bengal",88.4016041,22.1352378
+2014-05-14T00:00:00Z,Andhra Pradesh,Hyderabad,Insult to religion or blasphemy,0,1,0,0,May 2014,"Hyderabad, Andhra Pradesh",78.486671,17.385044
+2015-01-04T00:00:00Z,Gujarat,Vadodara,Insult to religion or blasphemy,0,0,0,0,Jan 2015,"Vadodara, Gujarat",73.1812187,22.3071588
+2015-03-16T00:00:00Z,Maharashtra,Bhandara,Insult to religion or blasphemy,0,0,1,1,Mar 2015,"Bhandara, Maharashtra",79.6570127,21.177658
+2016-01-29T00:00:00Z,Karnataka,Udupi,Insult to religion or blasphemy,0,1,1,0,Jan 2016,"Udupi, Karnataka",74.7421427,13.3408807
+2016-02-19T00:00:00Z,Maharashtra,Latur,Insult to religion or blasphemy,0,0,1,0,Feb 2016,"Latur, Maharashtra",76.5603828,18.4087934
+2016-03-01T00:00:00Z,West Bengal,Birbhum,Insult to religion or blasphemy,1,1,0,1,Mar 2016,"Birbhum, West Bengal",87.6186379,23.8401675
+2016-12-25T00:00:00Z,Rajasthan,Banswara,Insult to religion or blasphemy,0,0,1,0,Dec 2016,"Banswara, Rajasthan",74.4349761,23.5461394
+2017-03-16T00:00:00Z,Tamil Nadu,Coimbatore,Insult to religion or blasphemy,1,0,1,0,Mar 2017,"Coimbatore, Tamil Nadu",76.9558321,11.0168445
+2017-07-03T00:00:00Z,West Bengal,North 24 Paraganas,Insult to religion or blasphemy,1,1,1,0,Jul 2017,"North 24 Paraganas, West Bengal",88.402895,22.6168099
+2017-09-27T00:00:00Z,Rajasthan,Jaisalmer,Insult to religion or blasphemy,1,0,1,0,Sep 2017,"Jaisalmer, Rajasthan",70.9083443,26.9157487
+2017-12-19T00:00:00Z,Rajasthan,Rajsamand,Insult to religion or blasphemy,0,0,1,0,Dec 2017,"Rajsamand, Rajasthan",73.88600339999999,25.0583257
+2017-12-29T00:00:00Z,Uttar Pradesh,Mirzapur,Insult to religion or blasphemy,0,0,0,0,Dec 2017,"Mirzapur, Uttar Pradesh",82.5644344,25.1336987
+2009-06-19T00:00:00Z,Uttar Pradesh,Meerut,Interfaith relationship,1,0,1,0,Jun 2009,"Meerut, Uttar Pradesh",77.7064137,28.9844618
+2013-04-01T00:00:00Z,Karnataka,Hubli,Interfaith relationship,0,0,0,0,Apr 2013,"Hubli, Karnataka",75.1239547,15.3647083
+2015-01-18T00:00:00Z,Bihar,Muzaffarpur,Interfaith relationship,1,0,1,0,Jan 2015,"Muzaffarpur, Bihar",85.390982,26.1196607
+2015-02-20T00:00:00Z,Uttar Pradesh,Bijnor,Interfaith relationship,0,1,1,1,Feb 2015,"Bijnor, Uttar Pradesh",78.1350904,29.3731673
+2016-06-07T00:00:00Z,Uttar Pradesh,Bulandshahr,Interfaith relationship,0,0,1,0,Jun 2016,"Bulandshahr, Uttar Pradesh",77.8498292,28.406963
+2016-07-22T00:00:00Z,Uttar Pradesh,Muzaffarnagar,Interfaith relationship,1,0,1,0,Jul 2016,"Muzaffarnagar, Uttar Pradesh",77.7085091,29.4726817
+2016-09-12T00:00:00Z,Maharashtra,Thane,Interfaith relationship,1,0,1,0,Sep 2016,"Thane, Maharashtra",72.9780897,19.2183307
+2017-05-02T00:00:00Z,Uttar Pradesh,Bulandshahr,Interfaith relationship,1,0,1,0,May 2017,"Bulandshahr, Uttar Pradesh",77.8498292,28.406963
+2017-05-30T00:00:00Z,Jharkhand,Gumla,Interfaith relationship,1,0,1,0,May 2017,"Gumla, Jharkhand",84.53794549999999,23.0441295
+2017-06-03T00:00:00Z,Karnataka,Bijapur,Interfaith relationship,1,0,1,0,Jun 2017,"Bijapur, Karnataka",75.710031,16.8301708
+2017-07-07T00:00:00Z,Uttar Pradesh,Bijnor,Interfaith relationship,0,0,1,0,Jul 2017,"Bijnor, Uttar Pradesh",78.1350904,29.3731673
+2017-07-08T00:00:00Z,Madhya Pradesh,Sehore,Interfaith relationship,0,1,1,1,Jul 2017,"Sehore, Madhya Pradesh",77.0844044,23.2032399
+2017-07-17T00:00:00Z,Uttar Pradesh,Muzaffarnagar,Interfaith relationship,1,0,1,0,Jul 2017,"Muzaffarnagar, Uttar Pradesh",77.7085091,29.4726817
+2017-07-21T00:00:00Z,Maharashtra,Mumbai,Interfaith relationship,0,0,1,0,Jul 2017,"Mumbai, Maharashtra",72.8776559,19.0759837
+2017-09-06T00:00:00Z,Maharashtra,Hingoli,Interfaith relationship,0,0,0,0,Sep 2017,"Hingoli, Maharashtra",77.1493722,19.7173703
+2017-09-20T00:00:00Z,Uttar Pradesh,Agra,Interfaith relationship,0,0,0,1,Sep 2017,"Agra, Uttar Pradesh",78.00807449999999,27.1766701
+2017-09-27T00:00:00Z,Uttar Pradesh,Meerut,Interfaith relationship,0,0,0,0,Sep 2017,"Meerut, Uttar Pradesh",77.7064137,28.9844618
+2017-10-12T00:00:00Z,Rajasthan,Barmer,Interfaith relationship,0,0,0,0,Oct 2017,"Barmer, Rajasthan",71.3966865,25.7521467
+2017-11-06T00:00:00Z,Jharkhand,Bokaro,Interfaith relationship,1,0,1,0,Nov 2017,"Bokaro, Jharkhand",86.15111200000001,23.6692956
+2017-11-27T00:00:00Z,Bihar,West Champaran,Interfaith relationship,1,0,1,0,Nov 2017,"West Champaran, Bihar",84.3542049,27.1543104
+2017-12-11T00:00:00Z,Uttar Pradesh,Sambhal,Interfaith relationship,0,0,0,1,Dec 2017,"Sambhal, Uttar Pradesh",78.5717631,28.5903614
+2017-12-17T00:00:00Z,Jharkhand,Gumla,Interfaith relationship,1,0,1,0,Dec 2017,"Gumla, Jharkhand",84.53794549999999,23.0441295
+2017-12-17T00:00:00Z,Maharashtra,Thane,Interfaith relationship,0,0,1,1,Dec 2017,"Thane, Maharashtra",72.9780897,19.2183307
+2017-12-26T00:00:00Z,Delhi,Ghaziabad,Interfaith relationship,0,0,1,0,Dec 2017,"Ghaziabad, Delhi",77.45375779999999,28.6691565
+2018-01-13T00:00:00Z,Telangana,Khammam,Interfaith relationship,1,0,1,0,Jan 2018,"Khammam, Telangana",80.1514447,17.2472528
+2018-02-01T00:00:00Z,Delhi,West Delhi,Interfaith relationship,1,0,1,0,Feb 2018,"West Delhi, Delhi",77.067959,28.6663433
+2018-02-14T00:00:00Z,Uttar Pradesh,Shamli,Interfaith relationship,0,0,0,0,Feb 2018,"Shamli, Uttar Pradesh",77.3172046,29.4501986
+2018-02-16T00:00:00Z,Uttar Pradesh,Muzaffarnagar,Interfaith relationship,0,0,1,0,Feb 2018,"Muzaffarnagar, Uttar Pradesh",77.7085091,29.4726817
+2018-05-01T00:00:00Z,Rajasthan,Bikaner,Interfaith relationship,1,0,1,0,May 2018,"Bikaner, Rajasthan",73.3119159,28.0229348
+2018-05-08T00:00:00Z,Gujarat,Kachchh,Interfaith relationship,1,0,1,0,May 2018,"Kachchh, Gujarat",69.8597406,23.7337326
+2018-05-19T00:00:00Z,Uttar Pradesh,Kanpur,Interfaith relationship,0,0,1,0,May 2018,"Kanpur, Uttar Pradesh",80.3318736,26.449923
+2018-05-26T00:00:00Z,Uttarakhand,Ramnagar,Interfaith relationship,0,0,0,0,May 2018,"Ramnagar, Uttarakhand",79.1264997,29.3947643
+2018-06-20T00:00:00Z,Karnataka,Kalaburagi,Interfaith relationship,0,0,1,0,Jun 2018,"Kalaburagi, Karnataka",76.8342957,17.329731
+2018-06-29T00:00:00Z,Uttar Pradesh,Bulandshahr,Interfaith relationship,0,0,1,0,Jun 2018,"Bulandshahr, Uttar Pradesh",77.8498292,28.406963
+2018-07-20T00:00:00Z,Rajasthan,Barmer,Interfaith relationship,1,0,1,0,Jul 2018,"Barmer, Rajasthan",71.3966865,25.7521467
+2018-07-23T00:00:00Z,Uttar Pradesh,Ghaziabad,Interfaith relationship,0,1,1,0,Jul 2018,"Ghaziabad, Uttar Pradesh",77.45375779999999,28.6691565
+2018-07-28T00:00:00Z,Gujarat,Dahod,Interfaith relationship,0,1,1,0,Jul 2018,"Dahod, Gujarat",74.26061849999999,22.8344992
+2018-07-31T00:00:00Z,Uttar Pradesh,Tehri,Interfaith relationship,0,1,0,1,Jul 2018,"Tehri, Uttar Pradesh",79.8324755,28.2843189
+2018-08-21T00:00:00Z,Haryana,Faridabad,Interfaith relationship,1,0,1,0,Aug 2018,"Faridabad, Haryana",77.3177894,28.4089123
+2018-09-14T00:00:00Z,Telangana,Nalgonda,Interfaith relationship,1,0,1,0,Sep 2018,"Nalgonda, Telangana",79.26841689999999,17.0574663
+2018-09-23T00:00:00Z,Uttar Pradesh,Meerut,Interfaith relationship,0,0,1,0,Sep 2018,"Meerut, Uttar Pradesh",77.7064137,28.9844618
+2014-11-11T00:00:00Z,Uttar Pradesh,Muzaffarnagar,Minor dispute,1,0,1,0,Nov 2014,"Muzaffarnagar, Uttar Pradesh",77.7085091,29.4726817
+2014-11-11T00:00:00Z,Uttar Pradesh,Shamli,Minor dispute,0,1,0,0,Nov 2014,"Shamli, Uttar Pradesh",77.3172046,29.4501986
+2014-11-12T00:00:00Z,Uttar Pradesh,Hathras,Minor dispute,0,0,0,0,Nov 2014,"Hathras, Uttar Pradesh",78.0492265,27.5980718
+2015-01-14T00:00:00Z,Gujarat,Bharuch,Minor dispute,1,1,1,0,Jan 2015,"Bharuch, Gujarat",72.9958748,21.7051358
+2015-01-14T00:00:00Z,Maharashtra,Jalgaon,Minor dispute,0,1,1,0,Jan 2015,"Jalgaon, Maharashtra",75.5626039,21.0076578
+2015-02-16T00:00:00Z,Uttar Pradesh,Saharanpur,Minor dispute,1,0,1,0,Feb 2015,"Saharanpur, Uttar Pradesh",77.55520659999999,29.9680035
+2017-06-23T00:00:00Z,Haryana,Palwal,Minor dispute,1,0,1,0,Jun 2017,"Palwal, Haryana",77.3259878,28.1472852
+2017-12-18T00:00:00Z,Karnataka,Belagavi,Minor dispute,0,0,1,0,Dec 2017,"Belagavi, Karnataka",74.4976741,15.8496953
+2018-01-01T00:00:00Z,Jharkhand,Ranchi,Minor dispute,1,0,1,0,Jan 2018,"Ranchi, Jharkhand",85.309562,23.3440997
+2018-01-03T00:00:00Z,Karnataka,Dakshina Kannada,Minor dispute,1,0,1,0,Jan 2018,"Dakshina Kannada, Karnataka",75.2479061,12.8437814
+2018-01-12T00:00:00Z,Uttar Pradesh,Allahabad,Minor dispute,0,0,1,0,Jan 2018,"Allahabad, Uttar Pradesh",81.846311,25.4358011
+2018-01-26T00:00:00Z,Uttar Pradesh,Kasganj,Minor dispute,0,0,0,0,Jan 2018,"Kasganj, Uttar Pradesh",78.64610979999999,27.808529
+2018-07-29T00:00:00Z,Karnataka,Dakshina Kannada,Minor dispute,0,0,1,0,Jul 2018,"Dakshina Kannada, Karnataka",75.2479061,12.8437814
+2018-09-26T00:00:00Z,Rajasthan,Chittorgarh,Minor dispute,1,0,1,0,Sep 2018,"Chittorgarh, Rajasthan",74.6229699,24.8829177
+2018-10-25T00:00:00Z,Delhi,South Delhi,Minor dispute,1,0,1,0,Oct 2018,"South Delhi, Delhi",77.18728569999999,28.4816551
+2018-10-26T00:00:00Z,Telangana,Warangal,Minor dispute,1,0,1,0,Oct 2018,"Warangal, Telangana",79.59405439999999,17.9689008
+2009-01-28T00:00:00Z,Maharashtra,Nashik,Other,0,1,0,0,Jan 2009,"Nashik, Maharashtra",73.78980229999999,19.9974533
+2009-04-20T00:00:00Z,Maharashtra,Nagpur,Other,0,1,1,0,Apr 2009,"Nagpur, Maharashtra",79.0881546,21.1458004
+2010-01-25T00:00:00Z,Karnataka,Mysuru,Other,0,1,1,0,Jan 2010,"Mysuru, Karnataka",76.6393805,12.2958104
+2010-02-04T00:00:00Z,Karnataka,Mandya,Other,0,1,0,0,Feb 2010,"Mandya, Karnataka",76.89514880000002,12.5218157
+2010-07-25T00:00:00Z,Rajasthan,Udaipur,Other,0,1,1,0,Jul 2010,"Udaipur, Rajasthan",73.712479,24.585445
+2013-01-25T00:00:00Z,Rajasthan,Bhilwara,Other,0,1,1,0,Jan 2013,"Bhilwara, Rajasthan",74.63131829999999,25.3407388
+2013-07-29T00:00:00Z,Madhya Pradesh,Bhopal,Other,0,0,1,0,Jul 2013,"Bhopal, Madhya Pradesh",77.412615,23.2599333
+2014-06-02T00:00:00Z,Maharashtra,Pune,Other,1,0,1,0,Jun 2014,"Pune, Maharashtra",73.8567437,18.5204303
+2014-07-05T00:00:00Z,Madhya Pradesh,Raisen,Other,0,1,0,0,Jul 2014,"Raisen, Madhya Pradesh",77.7823973,23.3327329
+2014-07-21T00:00:00Z,Karnataka,Dakshina Kannada,Other,0,0,1,0,Jul 2014,"Dakshina Kannada, Karnataka",75.2479061,12.8437814
+2014-08-27T00:00:00Z,Gujarat,Vadodara,Other,0,1,1,0,Aug 2014,"Vadodara, Gujarat",73.1812187,22.3071588
+2014-08-29T00:00:00Z,Uttar Pradesh,Muzaffarnagar,Other,0,0,1,0,Aug 2014,"Muzaffarnagar, Uttar Pradesh",77.7085091,29.4726817
+2014-09-27T00:00:00Z,Madhya Pradesh,Bhopal,Other,1,0,1,0,Sep 2014,"Bhopal, Madhya Pradesh",77.412615,23.2599333
+2014-10-23T00:00:00Z,Delhi,East Delhi,Other,0,1,1,0,Oct 2014,"East Delhi, Delhi",77.29562729999999,28.6279559
+2014-12-01T00:00:00Z,Delhi,North East Delhi,Other,0,1,1,0,Dec 2014,"North East Delhi, Delhi",77.2580268,28.7183693
+2014-12-30T00:00:00Z,Gujarat,Bhavnagar,Other,0,0,1,0,Dec 2014,"Bhavnagar, Gujarat",72.15193040000001,21.7644725
+2015-01-18T00:00:00Z,Uttar Pradesh,Muzaffarnagar,Other,1,1,0,0,Jan 2015,"Muzaffarnagar, Uttar Pradesh",77.7085091,29.4726817
+2015-02-22T00:00:00Z,Karnataka,Dakshina Kannada,Other,0,0,1,0,Feb 2015,"Dakshina Kannada, Karnataka",75.2479061,12.8437814
+2015-04-03T00:00:00Z,Madhya Pradesh,Neemuch,Other,0,1,1,0,Apr 2015,"Neemuch, Madhya Pradesh",74.8726497,24.4737663
+2015-05-01T00:00:00Z,Uttar Pradesh,Shamli,Other,0,0,1,0,May 2015,"Shamli, Uttar Pradesh",77.3172046,29.4501986
+2015-05-02T00:00:00Z,Uttar Pradesh,Shamli,Other,0,1,1,0,May 2015,"Shamli, Uttar Pradesh",77.3172046,29.4501986
+2015-07-13T00:00:00Z,Tamil Nadu,Sivagangai,Other,0,1,1,1,Jul 2015,"Sivagangai, Tamil Nadu",78.48087749999999,9.8432999
+2015-08-25T00:00:00Z,Karnataka,Dakshina Kannada,Other,0,0,1,0,Aug 2015,"Dakshina Kannada, Karnataka",75.2479061,12.8437814
+2015-10-08T00:00:00Z,Kerala,Alappuzha,Other,0,1,1,0,Oct 2015,"Alappuzha, Kerala",76.3388484,9.498066699999999
+2015-10-13T00:00:00Z,Punjab,Bathinda,Other,0,0,1,0,Oct 2015,"Bathinda, Punjab",74.9454745,30.210994
+2016-01-22T00:00:00Z,Maharashtra,Pune,Other,1,0,1,0,Jan 2016,"Pune, Maharashtra",73.8567437,18.5204303
+2016-02-26T00:00:00Z,Delhi,North West Delhi,Other,0,0,1,0,Feb 2016,"North West Delhi, Delhi",77.0685134,28.7186211
+2016-03-12T00:00:00Z,Tamil Nadu,Coimbatore,Other,0,1,1,0,Mar 2016,"Coimbatore, Tamil Nadu",76.9558321,11.0168445
+2016-03-20T00:00:00Z,Punjab,Shaheed Bhagat Singh Nagar,Other,0,0,1,0,Mar 2016,"Shaheed Bhagat Singh Nagar, Punjab",76.0391909,31.0912954
+2016-03-25T00:00:00Z,Manipur,Imphal West,Other,0,0,1,1,Mar 2016,"Imphal West, Manipur",93.88589549999999,24.7827837
+2016-04-07T00:00:00Z,Manipur,Imphal West,Other,1,0,0,0,Apr 2016,"Imphal West, Manipur",93.88589549999999,24.7827837
+2016-06-06T00:00:00Z,Karnataka,Udupi,Other,0,1,1,0,Jun 2016,"Udupi, Karnataka",74.7421427,13.3408807
+2016-11-19T00:00:00Z,Madhya Pradesh,Vidisha,Other,0,1,0,0,Nov 2016,"Vidisha, Madhya Pradesh",77.81397179999999,23.5235719
+2016-11-22T00:00:00Z,Rajasthan,Sri Ganganagar,Other,0,0,0,0,Nov 2016,"Sri Ganganagar, Rajasthan",73.87998050000002,29.9093759
+2016-12-14T00:00:00Z,Rajasthan,Banswara,Other,0,0,1,0,Dec 2016,"Banswara, Rajasthan",74.4349761,23.5461394
+2017-03-13T00:00:00Z,Uttar Pradesh,Bareilly,Other,0,0,1,0,Mar 2017,"Bareilly, Uttar Pradesh",79.4304381,28.3670355
+2017-03-24T00:00:00Z,Uttar Pradesh,Bareilly,Other,0,0,0,0,Mar 2017,"Bareilly, Uttar Pradesh",79.4304381,28.3670355
+2017-03-25T00:00:00Z,Gujarat,Patan,Other,1,0,1,1,Mar 2017,"Patan, Gujarat",72.1210274,23.8500156
+2017-04-08T00:00:00Z,Jammu and Kashmir,Jammu,Other,0,0,1,0,Apr 2017,"Jammu, Jammu and Kashmir",74.8570259,32.7266016
+2017-05-21T00:00:00Z,Telangana,Medchal,Other,0,1,1,0,May 2017,"Medchal, Telangana",78.48048279999999,17.6323358
+2017-06-07T00:00:00Z,Delhi,North East Delhi,Other,0,1,1,0,Jun 2017,"North East Delhi, Delhi",77.2580268,28.7183693
+2017-06-09T00:00:00Z,Delhi,North East Delhi,Other,0,0,0,0,Jun 2017,"North East Delhi, Delhi",77.2580268,28.7183693
+2017-06-22T00:00:00Z,Uttar Pradesh,Mau,Other,1,0,1,0,Jun 2017,"Mau, Uttar Pradesh",83.5610119,25.9462838
+2017-06-28T00:00:00Z,Bihar,Muzaffarpur,Other,0,0,0,0,Jun 2017,"Muzaffarpur, Bihar",85.390982,26.1196607
+2017-07-01T00:00:00Z,Uttar Pradesh,Meerut,Other,0,0,1,0,Jul 2017,"Meerut, Uttar Pradesh",77.7064137,28.9844618
+2017-07-11T00:00:00Z,Haryana,Hisar,Other,0,0,0,0,Jul 2017,"Hisar, Haryana",75.7216527,29.1491875
+2017-08-15T00:00:00Z,Telangana,Nizamabad,Other,0,0,1,0,Aug 2017,"Nizamabad, Telangana",78.09408669999999,18.6725047
+2017-10-02T00:00:00Z,Uttar Pradesh,Noida,Other,0,1,0,0,Oct 2017,"Noida, Uttar Pradesh",77.3910265,28.5355161
+2017-11-23T00:00:00Z,Uttar Pradesh,Baghpat,Other,0,0,1,0,Nov 2017,"Baghpat, Uttar Pradesh",77.22760699999999,28.9427827
+2017-12-06T00:00:00Z,Rajasthan,Rajsamand,Other,1,0,1,0,Dec 2017,"Rajsamand, Rajasthan",73.88600339999999,25.0583257
+2017-12-18T00:00:00Z,Uttar Pradesh,Aligarh,Other,0,0,0,0,Dec 2017,"Aligarh, Uttar Pradesh",78.0880129,27.8973944
+2017-12-27T00:00:00Z,Gujarat,Vadodara,Other,0,0,1,0,Dec 2017,"Vadodara, Gujarat",73.1812187,22.3071588
+2017-12-27T00:00:00Z,Gujarat,Vadodara,Other,0,1,1,0,Dec 2017,"Vadodara, Gujarat",73.1812187,22.3071588
+2017-12-29T00:00:00Z,West Bengal,Birbhum,Other,0,0,0,1,Dec 2017,"Birbhum, West Bengal",87.6186379,23.8401675
+2018-01-02T00:00:00Z,Karnataka,Dakshina Kannada,Other,0,0,1,0,Jan 2018,"Dakshina Kannada, Karnataka",75.2479061,12.8437814
+2018-01-03T00:00:00Z,Karnataka,Dakshina Kannada,Other,1,0,1,0,Jan 2018,"Dakshina Kannada, Karnataka",75.2479061,12.8437814
+2018-01-06T00:00:00Z,Uttar Pradesh,Muzaffarnagar,Other,0,0,0,0,Jan 2018,"Muzaffarnagar, Uttar Pradesh",77.7085091,29.4726817
+2018-01-10T00:00:00Z,Jammu and Kashmir,Kathua,Other,1,0,1,0,Jan 2018,"Kathua, Jammu and Kashmir",75.5173465,32.3863082
+2018-01-15T00:00:00Z,Gujarat,Ahmedabad,Other,0,1,0,0,Jan 2018,"Ahmedabad, Gujarat",72.5713621,23.022505
+2018-01-19T00:00:00Z,Tamil Nadu,Chennai,Other,1,0,1,0,Jan 2018,"Chennai, Tamil Nadu",80.2707184,13.0826802
+2018-01-27T00:00:00Z,Uttar Pradesh,Kasganj,Other,0,1,1,0,Jan 2018,"Kasganj, Uttar Pradesh",78.64610979999999,27.808529
+2018-02-05T00:00:00Z,Rajasthan,Sirohi,Other,0,0,1,0,Feb 2018,"Sirohi, Rajasthan",72.8574558,24.8851548
+2018-03-05T00:00:00Z,Gujarat,Gandhinagar,Other,1,0,1,0,Mar 2018,"Gandhinagar, Gujarat",72.63694149999999,23.2156354
+2018-03-12T00:00:00Z,Madhya Pradesh,Ujjain,Other,0,1,0,0,Mar 2018,"Ujjain, Madhya Pradesh",75.7885163,23.1764665
+2018-04-06T00:00:00Z,Uttarakhand,Rudraprayag,Other,0,1,1,0,Apr 2018,"Rudraprayag, Uttarakhand",78.9811407,30.2844141
+2018-04-22T00:00:00Z,Tamil Nadu,Kanyakumari,Other,0,0,1,0,Apr 2018,"Kanyakumari, Tamil Nadu",77.5384507,8.0883064
+2018-05-14T00:00:00Z,West Bengal,Hooghly,Other,0,0,1,0,May 2018,"Hooghly, West Bengal",88.3898552,22.9011588
+2018-05-22T00:00:00Z,Uttarakhand,Nainital,Other,0,0,0,0,May 2018,"Nainital, Uttarakhand",79.4542033,29.3919202
+2018-05-25T00:00:00Z,Jharkhand,Koderma,Other,0,1,1,0,May 2018,"Koderma, Jharkhand",85.59336449999999,24.4676805
+2018-05-30T00:00:00Z,Haryana,Kamal,Other,0,0,1,0,May 2018,"Kamal, Haryana",75.1049137,29.7659267
+2018-05-31T00:00:00Z,Meghalaya,Shillong,Other,0,0,1,0,May 2018,"Shillong, Meghalaya",91.8932535,25.5787726
+2018-06-10T00:00:00Z,Jharkhand,Ranchi,Other,0,0,0,0,Jun 2018,"Ranchi, Jharkhand",85.309562,23.3440997
+2018-07-08T00:00:00Z,Tamil Nadu,Erode,Other,0,0,1,1,Jul 2018,"Erode, Tamil Nadu",77.7171642,11.3410364
+2018-08-13T00:00:00Z,Delhi,New Delhi,Other,0,0,1,0,Aug 2018,"New Delhi, Delhi",77.2090212,28.6139391
+2018-09-28T00:00:00Z,Punjab,Ludhiana,Other,0,0,1,0,Sep 2018,"Ludhiana, Punjab",75.8572758,30.900965
+2018-12-10T00:00:00Z,Uttar Pradesh,Bareilly,Other,0,0,1,0,Dec 2018,"Bareilly, Uttar Pradesh",79.4304381,28.3670355
+2018-12-17T00:00:00Z,Uttar Pradesh,Shahjahanpur,Other,0,0,1,0,Dec 2018,"Shahjahanpur, Uttar Pradesh",79.9147268,27.8753399
+2018-12-23T00:00:00Z,Maharashtra,Kolhapur,Other,0,1,1,0,Dec 2018,"Kolhapur, Maharashtra",74.24325270000001,16.7049873
+2010-03-06T00:00:00Z,Uttar Pradesh,Kanpur,Religious conversion,0,1,0,1,Mar 2010,"Kanpur, Uttar Pradesh",80.3318736,26.449923
+2010-05-23T00:00:00Z,Andhra Pradesh,Anantapur,Religious conversion,0,1,1,0,May 2010,"Anantapur, Andhra Pradesh",77.6005911,14.6818877
+2011-08-09T00:00:00Z,Andhra Pradesh,Nalgonda,Religious conversion,0,0,1,0,Aug 2011,"Nalgonda, Andhra Pradesh",77.4357739,15.089217
+2013-10-16T00:00:00Z,Andhra Pradesh,Vikarabad,Religious conversion,0,0,0,0,Oct 2013,"Vikarabad, Andhra Pradesh",77.9048268,17.3364555
+2013-12-13T00:00:00Z,Andhra Pradesh,Nalgonda,Religious conversion,0,0,1,0,Dec 2013,"Nalgonda, Andhra Pradesh",77.4357739,15.089217
+2013-12-13T00:00:00Z,Andhra Pradesh,Nalgonda,Religious conversion,0,0,0,0,Dec 2013,"Nalgonda, Andhra Pradesh",77.4357739,15.089217
+2013-12-29T00:00:00Z,Andhra Pradesh,Nalgonda,Religious conversion,0,0,0,0,Dec 2013,"Nalgonda, Andhra Pradesh",77.4357739,15.089217
+2014-01-11T00:00:00Z,Bihar,Jehanabad,Religious conversion,0,1,1,0,Jan 2014,"Jehanabad, Bihar",84.9853322,25.2132649
+2014-01-11T00:00:00Z,Andhra Pradesh,Vikarabad,Religious conversion,1,0,1,0,Jan 2014,"Vikarabad, Andhra Pradesh",77.9048268,17.3364555
+2015-03-17T00:00:00Z,Haryana,Hisar,Religious conversion,0,1,1,0,Mar 2015,"Hisar, Haryana",75.7216527,29.1491875
+2016-03-06T00:00:00Z,Chhattisgarh,Raipur,Religious conversion,0,1,1,0,Mar 2016,"Raipur, Chhattisgarh",81.62964130000002,21.2513844
+2016-04-20T00:00:00Z,Chhattisgarh,Bastar,Religious conversion,0,1,1,0,Apr 2016,"Bastar, Chhattisgarh",81.9338685,19.2073279
+2016-09-16T00:00:00Z,Karnataka,Dakshina Kannada,Religious conversion,0,0,0,0,Sep 2016,"Dakshina Kannada, Karnataka",75.2479061,12.8437814
+2016-11-19T00:00:00Z,Kerala,Mallapuram,Religious conversion,1,0,1,0,Nov 2016,"Mallapuram, Kerala",76.0710967,11.0509762
+2016-12-18T00:00:00Z,Rajasthan,Sri Ganganagar,Religious conversion,0,0,0,0,Dec 2016,"Sri Ganganagar, Rajasthan",73.87998050000002,29.9093759
+2016-12-25T00:00:00Z,Rajasthan,Alwar,Religious conversion,0,0,0,0,Dec 2016,"Alwar, Rajasthan",76.6345735,27.5529907
+2017-12-14T00:00:00Z,Madhya Pradesh,Satna,Religious conversion,0,0,1,1,Dec 2017,"Satna, Madhya Pradesh",80.8322428,24.6005075
+2017-12-19T00:00:00Z,Rajasthan,Pratapgarh,Religious conversion,0,0,0,0,Dec 2017,"Pratapgarh, Rajasthan",74.77873869999999,24.0316509
+2018-01-13T00:00:00Z,Uttar Pradesh,Baghpat,Religious conversion,0,0,1,0,Jan 2018,"Baghpat, Uttar Pradesh",77.22760699999999,28.9427827
+2018-02-26T00:00:00Z,Bihar,West Champaran,Religious conversion,0,0,1,0,Feb 2018,"West Champaran, Bihar",84.3542049,27.1543104
+2018-02-26T00:00:00Z,Telangana,Karimnagar,Religious conversion,0,0,1,1,Feb 2018,"Karimnagar, Telangana",79.1288412,18.4385553
+2018-04-23T00:00:00Z,Uttar Pradesh,Shamli,Religious conversion,0,0,0,0,Apr 2018,"Shamli, Uttar Pradesh",77.3172046,29.4501986
+2018-04-30T00:00:00Z,Tamil Nadu,Coimbatore,Religious conversion,0,0,1,0,Apr 2018,"Coimbatore, Tamil Nadu",76.9558321,11.0168445
+2018-06-18T00:00:00Z,Uttar Pradesh,Meerut,Religious conversion,0,0,0,1,Jun 2018,"Meerut, Uttar Pradesh",77.7064137,28.9844618
+2018-07-07T00:00:00Z,Jammu and Kashmir,Pulwama,Religious conversion,0,0,1,0,Jul 2018,"Pulwama, Jammu and Kashmir",74.89456919999999,33.8716117
+2018-10-31T00:00:00Z,Uttar Pradesh,Agra,Religious conversion,0,0,1,1,Oct 2018,"Agra, Uttar Pradesh",78.00807449999999,27.1766701

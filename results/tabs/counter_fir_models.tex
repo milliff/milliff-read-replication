@@ -1,0 +1,69 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+entry=none,label=none,
+note{}={+ p < 0.1, * p < 0.05, ** p < 0.01, *** p < 0.001},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]},
+column{1}={halign=l,},
+column{2}={halign=c,},
+column{3}={halign=c,},
+column{4}={halign=c,},
+hline{44}={1,2,3,4}{solid, 0.05em, black},
+}                     %% tabularray inner close
+\toprule
+& Counter FIR (All) & Counter FIR (IM) & Counter FIR (BJP) \\ \midrule %% TinyTableHeader
+VB Schools                        & \num{0.003}*   & \num{0.003}*   & \num{0.003}*   \\
+& (\num{0.001})  & (\num{0.001})  & (\num{0.001})  \\
+Population                        & \num{0.000}*   & \num{0.000}*   & \num{0.000}**  \\
+& (\num{0.000})  & (\num{0.000})  & (\num{0.000})  \\
+\% SC Population                 & \num{-0.037}*  & \num{-0.054}   & \num{-0.023}   \\
+& (\num{0.019})  & (\num{0.050})  & (\num{0.015})  \\
+\% ST Population                 & \num{0.001}    & \num{0.003}    & \num{0.007}    \\
+& (\num{0.008})  & (\num{0.020})  & (\num{0.008})  \\
+\% Illiterate Population         & \num{-0.010}   & \num{-0.049}   & \num{-0.002}   \\
+& (\num{0.019})  & (\num{0.046})  & (\num{0.012})  \\
+\% Male Population               & \num{-0.045}   & \num{0.022}    & \num{0.166}    \\
+& (\num{0.140})  & (\num{0.324})  & (\num{0.120})  \\
+Male Main Employment              & \num{0.010}    & \num{0.090}    & \num{-0.003}   \\
+& (\num{0.026})  & (\num{0.078})  & (\num{0.023})  \\
+\% Muslim Population             & \num{-0.003}   & \num{0.018}    & \num{-0.005}   \\
+& (\num{0.015})  & (\num{0.030})  & (\num{0.010})  \\
+\% Christian Population          & \num{-0.012}   & \num{0.044}    & \num{0.000}    \\
+& (\num{0.020})  & (\num{0.038})  & (\num{0.006})  \\
+Total Primary Schools             & \num{0.000}    & \num{0.000}    & \num{0.000}    \\
+& (\num{0.000})  & (\num{0.000})  & (\num{0.000})  \\
+\% Settlements w/ paved road     & \num{-0.003}   & \num{0.019}    & \num{0.005}    \\
+& (\num{0.006})  & (\num{0.016})  & (\num{0.005})  \\
+\% Settlements w/ improved road  & \num{-0.031}** & \num{-0.095}** & \num{-0.018}** \\
+& (\num{0.012})  & (\num{0.034})  & (\num{0.007})  \\
+Distance to town > 100k           & \num{0.000}    & \num{0.000}    & \num{0.000}    \\
+& (\num{0.000})  & (\num{0.000})  & (\num{0.000})  \\
+Distance to town > 500k           & \num{0.000}    & \num{0.000}    & \num{0.000}    \\
+& (\num{0.000})  & (\num{0.000})  & (\num{0.000})  \\
+Average Nightlight Emission, 2008 & \num{0.000}    & \num{-0.001}   & \num{0.000}    \\
+& (\num{0.001})  & (\num{0.002})  & (\num{0.001})  \\
+Avg. Days to Court Decision, 2010 & \num{0.000}    & \num{0.000}    & \num{0.000}    \\
+& (\num{0.000})  & (\num{0.000})  & (\num{0.000})  \\
+IPC Violent Crime Count           & \num{0.000}    & \num{0.000}    & \num{0.000}    \\
+& (\num{0.000})  & (\num{0.000})  & (\num{0.000})  \\
+School Founding Year              &                 & \num{0.000}+   &                 \\
+&                 & (\num{0.000})  &                 \\
+(Intercept)                       &                 &                 & \num{-0.089}   \\
+&                 &                 & (\num{0.061})  \\
+BJP Gov. in Power (State)?        &                 &                 & \num{-0.005}   \\
+&                 &                 & (\num{0.006})  \\
+2014 BJP Voteshare (State)        &                 &                 & \num{0.000}    \\
+&                 &                 & (\num{0.000})  \\
+Num.Obs.                          & \num{5724}     & \num{1857}     & \num{5724}     \\
+R2                                & \num{0.071}    & \num{0.088}    & \num{0.059}    \\
+R2 Adj.                           & \num{0.063}    & \num{0.065}    & \num{0.056}    \\
+AIC                               & \num{-8842.1}  & \num{-1267.0}  & \num{-8766.8}  \\
+BIC                               & \num{-8722.3}  & \num{-1162.0}  & \num{-8627.1}  \\
+RMSE                              & \num{0.11}     & \num{0.17}     & \num{0.11}     \\
+Std.Errors                        & by: district    & by: district    & by: district    \\
+State FEs?                        & Y               & Y               & N               \\
+\bottomrule
+\end{talltblr}
+\end{table}

@@ -1,0 +1,55 @@
+\begin{table}
+\caption{Correlations with VB School Presence}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+entry=none,label=none,
+note{}={+ p < 0.1, * p < 0.05, ** p < 0.01, *** p < 0.001},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]Q[]Q[]},
+column{1}={halign=l,},
+column{2}={halign=c,},
+column{3}={halign=c,},
+column{4}={halign=c,},
+column{5}={halign=c,},
+column{6}={halign=c,},
+column{7}={halign=c,},
+column{8}={halign=c,},
+hline{26}={1,2,3,4,5,6,7,8}{solid, 0.05em, black},
+}                     %% tabularray inner close
+\toprule
+& (1) & (2) & (3) & (4) & (5) & (6) & (7) \\ \midrule %% TinyTableHeader
+Non-VB Primary School Count      & \num{0.000}    &                 &                 &                 &                 &                 & \num{0.000}    \\
+& (\num{0.000})  &                 &                 &                 &                 &                 & (\num{0.000})  \\
+\% SC Population                &                 & \num{-0.333}** &                 &                 &                 &                 & \num{-0.274}*  \\
+&                 & (\num{0.118})  &                 &                 &                 &                 & (\num{0.120})  \\
+\% ST Population                &                 & \num{-0.075}   &                 &                 &                 &                 & \num{-0.038}   \\
+&                 & (\num{0.048})  &                 &                 &                 &                 & (\num{0.056})  \\
+\% Muslim Population            &                 & \num{0.016}    &                 &                 &                 &                 & \num{0.018}    \\
+&                 & (\num{0.089})  &                 &                 &                 &                 & (\num{0.090})  \\
+\% Christian Population         &                 & \num{-0.106}   & \num{-0.122}+  &                 &                 &                 & \num{-0.130}+  \\
+&                 & (\num{0.064})  & (\num{0.062})  &                 &                 &                 & (\num{0.067})  \\
+\% SC + ST                      &                 &                 &                 & \num{-0.092}*  &                 &                 &                 \\
+&                 &                 &                 & (\num{0.045})  &                 &                 &                 \\
+Male Main Employment             &                 &                 &                 &                 & \num{-0.103}   &                 & \num{-0.107}   \\
+&                 &                 &                 &                 & (\num{0.150})  &                 & (\num{0.152})  \\
+\% Settlements w/ Improved Road &                 &                 &                 &                 &                 & \num{-0.100}*  & \num{-0.114}** \\
+&                 &                 &                 &                 &                 & (\num{0.043})  & (\num{0.043})  \\
+Distance to Town > 100k          &                 &                 &                 &                 &                 & \num{0.000}    & \num{0.000}    \\
+&                 &                 &                 &                 &                 & (\num{0.000})  & (\num{0.000})  \\
+Distance to Town > 500k          &                 &                 &                 &                 &                 & \num{0.000}+   & \num{0.000}+   \\
+&                 &                 &                 &                 &                 & (\num{0.000})  & (\num{0.000})  \\
+Avg. Nightlight Emission, 2008   &                 &                 &                 &                 &                 & \num{0.006}*   & \num{0.007}**  \\
+&                 &                 &                 &                 &                 & (\num{0.002})  & (\num{0.003})  \\
+Population                       & \num{0.000}*** & \num{0.000}*** & \num{0.000}*** & \num{0.000}*** & \num{0.000}*** & \num{0.000}*** & \num{0.000}*** \\
+& (\num{0.000})  & (\num{0.000})  & (\num{0.000})  & (\num{0.000})  & (\num{0.000})  & (\num{0.000})  & (\num{0.000})  \\
+Num.Obs.                         & \num{5863}     & \num{6038}     & \num{6042}     & \num{6038}     & \num{6038}     & \num{5726}     & \num{5725}     \\
+R2                               & \num{0.381}    & \num{0.379}    & \num{0.377}    & \num{0.377}    & \num{0.376}    & \num{0.385}    & \num{0.388}    \\
+R2 Adj.                          & \num{0.377}    & \num{0.375}    & \num{0.373}    & \num{0.373}    & \num{0.372}    & \num{0.381}    & \num{0.383}    \\
+AIC                              & \num{4894.0}   & \num{5013.9}   & \num{5030.9}   & \num{5024.6}   & \num{5033.7}   & \num{4781.6}   & \num{4770.5}   \\
+BIC                              & \num{4914.1}   & \num{5054.2}   & \num{5051.1}   & \num{5044.7}   & \num{5053.9}   & \num{4821.5}   & \num{4850.4}   \\
+RMSE                             & \num{0.37}     & \num{0.37}     & \num{0.37}     & \num{0.37}     & \num{0.37}     & \num{0.37}     & \num{0.37}     \\
+Std.Errors                       & by: district    & by: district    & by: district    & by: district    & by: district    & by: district    & by: district    \\
+\bottomrule
+\end{talltblr}
+\end{table}

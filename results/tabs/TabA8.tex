@@ -1,0 +1,59 @@
+\begin{table}
+\caption{Correlation between VB Schools and Attempted Lynching Count With School Founding Year and Other Controls}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+entry=none,label=none,
+note{}={+ p < 0.1, * p < 0.05, ** p < 0.01, *** p < 0.001},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]},
+column{1}={halign=l,},
+column{2}={halign=c,},
+column{3}={halign=c,},
+column{4}={halign=c,},
+hline{34}={1,2,3,4}{solid, 0.05em, black},
+}                     %% tabularray inner close
+\toprule
+& HC Count & Fatal HC Count & Counter FIR Count \\ \midrule %% TinyTableHeader
+vb\_count       & \num{0.007}**   & \num{0.002}+    & \num{0.003}*   \\
+& (\num{0.002})   & (\num{0.001})   & (\num{0.001})  \\
+tot\_pop        & \num{0.000}***  & \num{0.000}*    & \num{0.000}*   \\
+& (\num{0.000})   & (\num{0.000})   & (\num{0.000})  \\
+pc\_sc          & \num{-0.269}+   & \num{-0.051}    & \num{-0.049}   \\
+& (\num{0.142})   & (\num{0.048})   & (\num{0.052})  \\
+pc\_st          & \num{0.078}     & \num{0.017}     & \num{0.002}    \\
+& (\num{0.056})   & (\num{0.024})   & (\num{0.020})  \\
+pc\_illt        & \num{-0.416}*** & \num{-0.146}**  & \num{-0.045}   \\
+& (\num{0.124})   & (\num{0.051})   & (\num{0.046})  \\
+pc\_male        & \num{0.015}     & \num{0.385}     & \num{0.037}    \\
+& (\num{0.814})   & (\num{0.353})   & (\num{0.323})  \\
+wf\_male        & \num{0.519}*    & \num{0.150}     & \num{0.083}    \\
+& (\num{0.228})   & (\num{0.092})   & (\num{0.080})  \\
+pc\_muslim      & \num{0.222}*    & \num{0.110}*    & \num{0.024}    \\
+& (\num{0.089})   & (\num{0.047})   & (\num{0.029})  \\
+pc\_christian   & \num{0.304}+    & \num{0.028}     & \num{0.041}    \\
+& (\num{0.166})   & (\num{0.054})   & (\num{0.037})  \\
+prim\_school    & \num{0.000}+    & \num{0.000}     & \num{0.000}    \\
+& (\num{0.000})   & (\num{0.000})   & (\num{0.000})  \\
+tar\_road       & \num{0.105}     & \num{0.014}     & \num{0.020}    \\
+& (\num{0.069})   & (\num{0.021})   & (\num{0.016})  \\
+dirt\_road      & \num{-0.349}**  & \num{-0.079}*   & \num{-0.097}** \\
+& (\num{0.111})   & (\num{0.034})   & (\num{0.034})  \\
+tdist\_100k     & \num{0.000}     & \num{0.000}     & \num{0.000}    \\
+& (\num{0.000})   & (\num{0.000})   & (\num{0.000})  \\
+tdist\_500k     & \num{0.000}     & \num{0.000}     & \num{0.000}    \\
+& (\num{0.000})   & (\num{0.000})   & (\num{0.000})  \\
+nightlight\_08  & \num{-0.002}    & \num{0.000}     & \num{-0.001}   \\
+& (\num{0.005})   & (\num{0.002})   & (\num{0.002})  \\
+final\_founding & \num{-0.001}    & \num{-0.001}*** & \num{0.000}+   \\
+& (\num{0.001})   & (\num{0.000})   & (\num{0.000})  \\
+Num.Obs.         & \num{1857}      & \num{1857}      & \num{1857}     \\
+R2               & \num{0.178}     & \num{0.101}     & \num{0.088}    \\
+R2 Adj.          & \num{0.158}     & \num{0.080}     & \num{0.066}    \\
+AIC              & \num{2776.8}    & \num{-604.5}    & \num{-1269.8}  \\
+BIC              & \num{2870.8}    & \num{-510.5}    & \num{-1175.8}  \\
+RMSE             & \num{0.51}      & \num{0.20}      & \num{0.17}     \\
+Std.Errors       & by: district     & by: district     & by: district    \\
+\bottomrule
+\end{talltblr}
+\end{table}
