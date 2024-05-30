@@ -49,16 +49,19 @@ Note: We used `R 4.3.1 (Beagle Scouts)` on an `aarch64-apple-darwin20 (64-bit)` 
 Each numbered item in the list below refers to an individual source code file in /milliff-read-replication/code/. For each file, we provide a brief description of the analyses, list the data sources it calls from /milliff-read-replication/data/, and the outputs it creates in /milliff-read-replication/results/.
 
 1. 01-hcw-descriptive-statistics.R
-    Description: Summarizes hate crime data from India Religious Hate Crime Watch
-    Data: hc_locs.csv; subdistricts.json
-    Outputs: Figure 1; Figure 3B; Figure A.1; Table A.1; Supplementary Figures
+
+    - Description: Summarizes hate crime data from India Religious Hate Crime Watch
+    - Data: hc_locs.csv; subdistricts.json
+    - Outputs: Figure 1; Figure 3B; Figure A.1; Table A.1; Supplementary Figures
 
 2. 02-vb-descriptive-statistics.R
-    Description: Summarizes Vidhya Bharati schools data
-    Data: vb_locs.csv; subdistricts.json
-    Outputs: Figure 3a; Figure 6; Supplementary Figures/Tables
+    
+    - Description: Summarizes Vidhya Bharati schools data
+    - Data: vb_locs.csv; subdistricts.json
+    - Outputs: Figure 3a; Figure 6; Supplementary Figures/Tables
 
 3. 03-main-estimation.R
+
     Description: Estimates primary results (relationship between VB schools and hate crimes)
     Data: main_df.RData
     Outputs: Figure 4; Figure 5; Table A.2; Table A.3; Table A.4
