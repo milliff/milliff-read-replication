@@ -23,7 +23,26 @@ A brief introduction to the paper and its objectives.
 
 ## Installation
 
-Instructions on how to install and set up the replication package.
+We use the `renv` package to create an `R` "environment" that makes it easy to install (correct versions of) all the software necessary to reproduce our analysis. 
+
+To set up the correct environment, simply:
+
+  1. Clone this repository, and;
+```
+usethis::create_from_github(
+  'milliff/milliff-read-replication',
+  destdir = "[YOUR TARGET DIRECTORY]",
+  fork = F,
+  protocol = 'https'
+)
+```
+  2. Run the following commands to load all the required packages (listed in /milliff-read-repository/renv.lock) into your environment
+```
+renv::init()
+renv::restore()
+```
+
+Note: We used `R 4.3.1 (Beagle Scouts)` on an `aarch64-apple-darwin20 (64-bit)` platform running macOS Sonoma 14.5 for all the results in the paper.
 
 ## Replication
 
