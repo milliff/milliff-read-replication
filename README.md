@@ -134,7 +134,7 @@ This license requires that reusers give credit to the creator. It allows reusers
 
 ## Contact
 
-Direct questions, complaints, and compliments to ![Aidan Milliff](mailto:milliff.a@gmail.com)
+Direct questions, complaints, and compliments to [Aidan Milliff](mailto:milliff.a@gmail.com)
 
 ## Citation
 
