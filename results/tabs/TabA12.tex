@@ -1,55 +1,27 @@
 \begin{table}
-\caption{Correlations with VB School Count}
 \centering
 \begin{talltblr}[         %% tabularray outer open
 entry=none,label=none,
 note{}={+ p < 0.1, * p < 0.05, ** p < 0.01, *** p < 0.001},
 ]                     %% tabularray outer close
 {                     %% tabularray inner open
-colspec={Q[]Q[]Q[]Q[]Q[]Q[]Q[]Q[]},
+colspec={Q[]Q[]Q[]},
 column{1}={halign=l,},
 column{2}={halign=c,},
 column{3}={halign=c,},
-column{4}={halign=c,},
-column{5}={halign=c,},
-column{6}={halign=c,},
-column{7}={halign=c,},
-column{8}={halign=c,},
-hline{26}={1,2,3,4,5,6,7,8}{solid, 0.05em, black},
+hline{4}={1,2,3}{solid, 0.05em, black},
 }                     %% tabularray inner close
 \toprule
-& (1) & (2) & (3) & (4) & (5) & (6) & (7) \\ \midrule %% TinyTableHeader
-Non-VB Primary School Count      & \num{0.002}    &                 &                 &                  &                 &                  & \num{0.000}    \\
-& (\num{0.002})  &                 &                 &                  &                 &                  & (\num{0.002})  \\
-\% SC Population                &                 & \num{-1.396}+  &                 &                  &                 &                  & \num{-0.438}   \\
-&                 & (\num{0.822})  &                 &                  &                 &                  & (\num{0.777})  \\
-\% ST Population                &                 & \num{-1.675}** &                 &                  &                 &                  & \num{-1.349}*  \\
-&                 & (\num{0.530})  &                 &                  &                 &                  & (\num{0.545})  \\
-\% Muslim Population            &                 & \num{1.464}**  &                 &                  &                 &                  & \num{0.864}    \\
-&                 & (\num{0.552})  &                 &                  &                 &                  & (\num{0.570})  \\
-\% Christian Population         &                 & \num{0.526}    & \num{-0.695}*  &                  &                 &                  & \num{0.583}    \\
-&                 & (\num{0.497})  & (\num{0.331})  &                  &                 &                  & (\num{0.509})  \\
-\% SC + ST                      &                 &                 &                 & \num{-1.781}*** &                 &                  &                 \\
-&                 &                 &                 & (\num{0.504})   &                 &                  &                 \\
-Male Main Employment             &                 &                 &                 &                  & \num{0.696}    &                  & \num{0.832}    \\
-&                 &                 &                 &                  & (\num{1.378})  &                  & (\num{1.523})  \\
-\% Settlements w/ Improved Road &                 &                 &                 &                  &                 & \num{-1.104}*** & \num{-0.993}** \\
-&                 &                 &                 &                  &                 & (\num{0.319})   & (\num{0.341})  \\
-Distance to Town > 100k          &                 &                 &                 &                  &                 & \num{0.002}     & \num{0.003}    \\
-&                 &                 &                 &                  &                 & (\num{0.002})   & (\num{0.002})  \\
-Distance to Town > 500k          &                 &                 &                 &                  &                 & \num{0.000}     & \num{0.000}    \\
-&                 &                 &                 &                  &                 & (\num{0.001})   & (\num{0.001})  \\
-Avg. Nightlight Emission, 2008   &                 &                 &                 &                  &                 & \num{-0.010}    & \num{-0.018}   \\
-&                 &                 &                 &                  &                 & (\num{0.023})   & (\num{0.024})  \\
-Population                       & \num{0.000}*** & \num{0.000}*** & \num{0.000}*** & \num{0.000}***  & \num{0.000}*** & \num{0.000}***  & \num{0.000}*** \\
-& (\num{0.000})  & (\num{0.000})  & (\num{0.000})  & (\num{0.000})   & (\num{0.000})  & (\num{0.000})   & (\num{0.000})  \\
-Num.Obs.                         & \num{5863}     & \num{6038}     & \num{6042}     & \num{6038}      & \num{6038}     & \num{5726}      & \num{5725}     \\
-R2                               & \num{0.321}    & \num{0.302}    & \num{0.299}    & \num{0.301}     & \num{0.298}    & \num{0.337}     & \num{0.338}    \\
-R2 Adj.                          & \num{0.317}    & \num{0.297}    & \num{0.294}    & \num{0.297}     & \num{0.294}    & \num{0.332}     & \num{0.333}    \\
-AIC                              & \num{34770.0}  & \num{35840.1}  & \num{35883.1}  & \num{35840.9}   & \num{35863.8}  & \num{33937.0}   & \num{33928.5}  \\
-BIC                              & \num{34790.0}  & \num{35880.3}  & \num{35903.2}  & \num{35861.0}   & \num{35883.9}  & \num{33976.9}   & \num{34008.3}  \\
-RMSE                             & \num{4.69}     & \num{4.70}     & \num{4.71}     & \num{4.70}      & \num{4.71}     & \num{4.68}      & \num{4.67}     \\
-Std.Errors                       & by: district    & by: district    & by: district    & by: district     & by: district    & by: district     & by: district    \\
+& SHRUG Covariates & AidData Covariates \\ \midrule %% TinyTableHeader
+VB Schools & \num{0.009}*** & \num{0.011}*** \\
+& (\num{0.003})  & (\num{0.003})  \\
+Num.Obs.   & \num{5718}     & \num{6009}     \\
+R2         & \num{0.139}    & \num{0.134}    \\
+R2 Adj.    & \num{0.131}    & \num{0.127}    \\
+AIC        & \num{3041.9}   & \num{3538.2}   \\
+BIC        & \num{3168.3}   & \num{3652.1}   \\
+RMSE       & \num{0.31}     & \num{0.32}     \\
+Std.Errors & by: district    & by: district    \\
 \bottomrule
 \end{talltblr}
 \end{table}

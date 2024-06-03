@@ -8,7 +8,7 @@
 #
 # Script Name: vb-descriptive-statistics.R
 #
-# Script Description: Produces data description and summary statistics for Vidhya Bharati school data in Figure 3A and Figure 6
+# Script Description: Produces data description and summary statistics for Vidhya Bharati school data in Figure 2A and Figure 5; as well as Figure A.2 and Table A.2
 #
 #
 # Notes:
@@ -20,6 +20,9 @@
 # SET OPTIONS ---------------------------------------
 cat("SETTING OPTIONS... \n\n", sep = "")
 
+library(tidyverse); library(estimatr); library(modelsummary)
+library(tmap); library(panelView)
+
 # LOAD DATA ------------------------------------
 vb    <- read_csv("./data/vb_locs.csv")
 subdi <- st_read("./data/subdistricts.json") |> st_make_valid()
@@ -28,7 +31,7 @@ subdi <- st_read("./data/subdistricts.json") |> st_make_valid()
 # -------------------------------------------------------------------------
 
 
-# Figure 3 ----------------------------------------------------------------
+# Figure 2 ----------------------------------------------------------------
 
 vb_in_subdi <- vb %>% 
   filter(complete.cases(lon, lat)) %>% 
@@ -36,7 +39,7 @@ vb_in_subdi <- vb %>%
   st_as_sf(
     coords = c("lon", "lat"),
     agr = "constant",
-    crs = 4326, # same as WGS84
+    crs = st_crs(4326), # same as WGS84
     stringsAsFactors = F,
     remove = T
   ) 
@@ -62,10 +65,10 @@ tm_shape(vb_subdi_df) +
     showNA = FALSE,
     alpha = 0.8
   ) 
-tmap_save(filename = "./results/figs/Fig3a.png")
+tmap_save(filename = "./results/figs/Fig2a.png")
 
 
-# Figure 6 ----------------------------------------------------------------
+# Figure 5 ----------------------------------------------------------------
 subdi_vb <- vb_in_subdi |> 
   group_by(id) |> 
   summarise(vb_count = n(),
@@ -92,14 +95,14 @@ panelview(data = husk, D = "vb", index = c("id", "year"), by.timing = T, display
           xlab = "Year",
           ylab = "Subdistrict",
           legend.labs = c("No VB", "Pre VB", "Has VB"))
-ggsave(filename = "./results/figs/Fig6.png", width = 10, height = 8, dpi = 300)
+ggsave(filename = "./results/figs/Fig5.png", width = 10, height = 8, dpi = 300)
 
 
 
-# Additional Figures ---------------------------------------------------------------------
+# Figure A.2; Table A.2 ---------------------------------------------------------------------
 
 tmp <- vb %>% mutate(State = factor(STATE)) %>%  select(State, final_founding) %>%  report_sample(group_by = "State")
-knitr::kable(t(tmp), caption = "Statewise Breakdown of VB School Presence", format = "latex") |> save_kable(file = "./results/tabs/vb_by_state.tex")
+knitr::kable(t(tmp), caption = "Statewise Breakdown of VB School Presence", format = "latex") |> save_kable(file = "./results/tabs/TabA2.tex")
 
 ggplot(vb) +
   geom_bar(aes(x = final_founding), fill = "red") +
@@ -109,5 +112,5 @@ ggplot(vb) +
        y = "Count",
        title = "State-wise count of Vidhya Bharati School Openings by Year",
        caption = "States/UTs with no Vidhya Bharati schools are omitted.")
-ggsave(filename = "./results/figs/vb_founding_by_state.png", width = 10, height = 8, dpi = 300)
+ggsave(filename = "./results/figs/FigA2.png", width = 10, height = 8, dpi = 300)
 

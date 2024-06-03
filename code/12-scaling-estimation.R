@@ -6,9 +6,9 @@
 #
 # Date: 2024-05-30
 #
-# Script Name:
+# Script Name: 12-scaling-estimation.R
 #
-# Script Description:
+# Script Description: Scaled predictors 
 #
 #
 # Notes:
@@ -19,6 +19,7 @@
 
 # SET OPTIONS ---------------------------------------
 cat("SETTING OPTIONS... \n\n", sep = "")
+library(tidyverse); library(estimatr); library(modelsummary)
 
 # LOAD Data ------------------------------------
 load("./data/main_df_28May24.RData")
@@ -53,4 +54,4 @@ modelsummary::modelsummary(list("Scaled VB" = scaled_vb, "Scaled HC" = scaled_hc
                                                  c("All", "Yes"),
                                                  c("All", "Yes"),
                                                  c("All", "Yes")),
-                           output = "./results/tabs/scaled-predictors.tex")
+                           output = "./results/tabs/TabA9.tex")

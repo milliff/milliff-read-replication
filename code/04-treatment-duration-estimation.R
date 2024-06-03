@@ -8,7 +8,7 @@
 #
 # Script Name: treatment_duration_estimation.R
 #
-# Script Description: Estimates models in Figures 7, 8, and 9; as well as Figure A.2 and Table A.8
+# Script Description: Estimates models in Figures 6, 7, and 8; as well as Figure A.3 and Table A.8
 #
 #
 # Notes:
@@ -20,6 +20,8 @@
 # SET OPTIONS ---------------------------------------
 cat("SETTING OPTIONS... \n\n", sep = "")
 
+library(tidyverse); library(estimatr); library(modelsummary); library(tayloRswift)
+
 # LOAD DATA ------------------------------------
 load("./data/main_df_28May24.RData")
 
@@ -29,20 +31,20 @@ load("./data/main_df_28May24.RData")
 
 
 
-# Figure 7 ----------------------------------------------------------------
+# Figure 6 ----------------------------------------------------------------
 
 count_mod_ff <- lm_robust(count ~ vb_count + final_founding + tot_pop + pc_sc + pc_st + pc_illt + pc_male + 
                             wf_male + pc_muslim + pc_christian + prim_school + tar_road + 
                             dirt_road +  tdist_100k + tdist_500k + nightlight_08 + 
-                            mean_time_decision + vio_crim, data = df, clusters = district, fixed_effects = state_ut)
+                            mean_time_decision + vio_crim + ucdp, data = df, clusters = district, fixed_effects = state_ut)
 fatal_mod_ff <- lm_robust(fatal ~ vb_count + final_founding + tot_pop + pc_sc + pc_st + pc_illt + pc_male + 
                             wf_male + pc_muslim + pc_christian + prim_school + tar_road + 
                             dirt_road +  tdist_100k + tdist_500k + nightlight_08 + 
-                            mean_time_decision + vio_crim, data = df, clusters = district, fixed_effects = state_ut)
+                            mean_time_decision + vio_crim + ucdp, data = df, clusters = district, fixed_effects = state_ut)
 ctfir_mod_ff <- lm_robust(counterFIR ~ vb_count + final_founding + tot_pop + pc_sc + pc_st + pc_illt + pc_male + 
                             wf_male + pc_muslim + pc_christian + prim_school + tar_road + 
                             dirt_road +  tdist_100k + tdist_500k + nightlight_08 + 
-                            mean_time_decision + vio_crim, data = df, clusters = district, fixed_effects = state_ut)
+                            mean_time_decision + vio_crim + ucdp, data = df, clusters = district, fixed_effects = state_ut)
 
 
 rbind.data.frame(broom::tidy(count_mod_ff), broom::tidy(fatal_mod_ff), broom::tidy(ctfir_mod_ff)) |> 
@@ -59,10 +61,10 @@ rbind.data.frame(broom::tidy(count_mod_ff), broom::tidy(fatal_mod_ff), broom::ti
   theme_bw() + 
   scale_color_taylor() + 
   theme(legend.position = "none")
-ggsave("./results/figs/Fig7.png", width = 10, height = 8, dpi = 300)
+ggsave("./results/figs/Fig6.png", width = 10, height = 8, dpi = 300)
 
 
-# Figure 8 ----------------------------------------------------------------
+# Figure 7 ----------------------------------------------------------------
 
 df$vb_pres <- ifelse(df$vb_count > 0, 1, 0)
 
@@ -78,14 +80,14 @@ flex <- df |> select(count, vb_count, final_founding, district, state_ut,
                                           na.rm = T, Xlabel = "VB School Founding Year", Ylabel = "Hate Crime Count",
                                           Dlabel = "VB Schools",  cl = "district", nbins = 3)
 
-png("./results/figs/Fig8.png")
+png("./results/figs/Fig7.png")
 plot(flex, bin.labs = F, theme.bw = T) + labs(title = "Marginal effect of VB School count on Hate Crimes", subtitle = "Moderated by Founding Date of School",
                                               caption = "Includes all controls from main specification\nErrors clustered by district, State FEs."
 )
 dev.off()
 
 
-# Figure 9 ----------------------------------------------------------------
+# Figure 8 ----------------------------------------------------------------
 
 count_mod_duration   <- lm_robust(count ~ school_years, data = df, clusters = district, fixed_effects = state_ut)
 fatal_mod_duration   <- lm_robust(fatal ~ school_years, data = df, clusters = district, fixed_effects = state_ut)
@@ -108,10 +110,10 @@ rbind.data.frame(broom::tidy(count_mod_duration), broom::tidy(fatal_mod_duration
   theme_bw() + 
   scale_color_taylor() + 
   theme(legend.position = "none")
-ggsave("./results/figs/Fig9.png", width = 10, height = 8, dpi = 300)
+ggsave("./results/figs/Fig8.png", width = 10, height = 8, dpi = 300)
 
 
-# Figure A2 ---------------------------------------------------------------
+# Figure A3 ---------------------------------------------------------------
 
 count_mod_total   <- lm_robust(count ~ total_years, data = df, clusters = district, fixed_effects = state_ut)
 fatal_mod_total   <- lm_robust(fatal ~ total_years, data = df, clusters = district, fixed_effects = state_ut)
@@ -134,7 +136,7 @@ rbind.data.frame(broom::tidy(count_mod_total), broom::tidy(fatal_mod_total), bro
   theme_bw() + 
   scale_color_taylor() + 
   theme(legend.position = "none")
-ggsave("./results/figs/FigA2.png", width = 10, height = 8, dpi = 300)
+ggsave("./results/figs/FigA3.png", width = 10, height = 8, dpi = 300)
 
 
 

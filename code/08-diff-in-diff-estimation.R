@@ -8,7 +8,7 @@
 #
 # Script Name: diff-in-diff-estimation.R
 #
-# Script Description: Estimates models for Figures A.3 and A.4 as well as Table A.14
+# Script Description: Estimates models for Figures A.6 and A.7 as well as Table A.21
 #
 #
 # Notes:
@@ -19,6 +19,7 @@
 
 # SET OPTIONS ---------------------------------------
 cat("SETTING OPTIONS... \n\n", sep = "")
+library(did); library(didimputation); library(tidyverse); library(DRDID); library(did2s); library(DIDmultiplegt); library(di)
 
 # LOAD DATA ------------------------------------
 load("./data/did_df.RData")
@@ -39,7 +40,7 @@ panel <- panel |> mutate(pc_sc = tot_sc/tot_pop,
 
 
 
-##### Figure A3; Table A14 --------------------------------------------------------------
+##### Figure A6; Table A21 --------------------------------------------------------------
 
 
 # Borusyak, Jaravel, and Speiss (2023) ------------------------------------
@@ -72,13 +73,13 @@ borusyak_es |>
        y = "Estimate",
        color = "Sig. Level") +
   scale_color_manual(labels = c("<90%", "90%", "95%", "99%"), values=c("#D7D3CB",  "#BDADAB", "#43475B", "#B1532A"))
-ggsave("./results/figs/FigA3.png", width = 11, height = 8, dpi = 300)
+ggsave("./results/figs/FigA6.png", width = 11, height = 8, dpi = 300)
 
 
 
 
 
-###### Figure A4 Aggregation Plot --------------------------------------------------------
+###### Figure A7 Aggregation Plot --------------------------------------------------------
 
 # Callaway and Sant'Anna (2021) -------------------------------------------
 # Drops units already treated in period 1 (2008)
@@ -199,4 +200,4 @@ ggplot(plot_frame) +
        color = "Estimator",
        shape = "Estimator",
        caption = "BJS = Borusyak, Jaravel, and Speiss (2021)\nCA = Callaway and Sant'Anna (2021)\ndCDH = de Chaisemartin and D'Haultfœuille (2020)\nSA = Sun and Abraham (2020)")
-ggsave("./results/figs/FigA4.png", width = 11, height = 8, dpi = 300)
+ggsave("./results/figs/FigA7.png", width = 11, height = 8, dpi = 300)

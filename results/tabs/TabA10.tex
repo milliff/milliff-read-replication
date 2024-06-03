@@ -1,0 +1,40 @@
+\begin{table}
+\caption{State Weakness Models}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+entry=none,label=none,
+note{}={+ p < 0.1, * p < 0.05, ** p < 0.01, *** p < 0.001},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]Q[]},
+column{1}={halign=l,},
+column{2}={halign=c,},
+column{3}={halign=c,},
+column{4}={halign=c,},
+column{5}={halign=c,},
+column{6}={halign=c,},
+column{7}={halign=c,},
+hline{12}={1,2,3,4,5,6,7}{solid, 0.05em, black},
+}                     %% tabularray inner close
+\toprule
+& (1) & (2) & (3) & (4) & (5) & (6) \\ \midrule %% TinyTableHeader
+State Weakness Index                        & \num{-0.27669}*** &                     &                     &                   &                    &                    \\
+& (\num{0.05858})   &                     &                     &                   &                    &                    \\
+Avg. Days to Court Decision, 2010           &                    & \num{2.0027e-05}   &                     &                   &                    & \num{0.00001}     \\
+&                    & (\num{1.5084e-05}) &                     &                   &                    & (\num{0.00002})   \\
+Distance to Town > 500k                     &                    &                     & \num{-0.00026}**   &                   &                    & \num{-0.00003}    \\
+&                    &                     & (\num{8.0486e-05}) &                   &                    & (\num{0.00007})   \\
+\% Settlements without Improved Road       &                    &                     &                     & \num{0.15923}*** &                    & \num{0.13414}**   \\
+&                    &                     &                     & (\num{0.04522})  &                    & (\num{0.04376})   \\
+Avg. Nightlight Emission, 2008 (rev. score) &                    &                     &                     &                   & \num{-0.01100}*** & \num{-0.01147}*** \\
+&                    &                     &                     &                   & (\num{0.00198})   & (\num{0.00225})   \\
+Num.Obs.                                    & \num{5802}        & \num{6042}         & \num{5863}         & \num{5726}       & \num{5863}        & \num{5726}        \\
+R2                                          & \num{0.032}       & \num{0.031}        & \num{0.027}        & \num{0.032}      & \num{0.047}       & \num{0.050}       \\
+R2 Adj.                                     & \num{0.027}       & \num{0.025}        & \num{0.022}        & \num{0.026}      & \num{0.042}       & \num{0.044}       \\
+AIC                                         & \num{3651.7}      & \num{4173.7}       & \num{3744.8}       & \num{3674.6}     & \num{3623.3}      & \num{3571.2}      \\
+BIC                                         & \num{3665.0}      & \num{4187.2}       & \num{3758.1}       & \num{3687.9}     & \num{3636.6}      & \num{3604.5}      \\
+RMSE                                        & \num{0.33}        & \num{0.34}         & \num{0.33}         & \num{0.33}       & \num{0.33}        & \num{0.33}        \\
+Std.Errors                                  & by: district       & by: district        & by: district        & by: district      & by: district       & by: district       \\
+\bottomrule
+\end{talltblr}
+\end{table}

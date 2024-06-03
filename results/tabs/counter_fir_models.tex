@@ -5,65 +5,65 @@ entry=none,label=none,
 note{}={+ p < 0.1, * p < 0.05, ** p < 0.01, *** p < 0.001},
 ]                     %% tabularray outer close
 {                     %% tabularray inner open
-colspec={Q[]Q[]Q[]Q[]},
+colspec={Q[]Q[]Q[]Q[]Q[]},
 column{1}={halign=l,},
 column{2}={halign=c,},
 column{3}={halign=c,},
 column{4}={halign=c,},
-hline{44}={1,2,3,4}{solid, 0.05em, black},
+column{5}={halign=c,},
+hline{44}={1,2,3,4,5}{solid, 0.05em, black},
 }                     %% tabularray inner close
 \toprule
-& Counter FIR (All) & Counter FIR (IM) & Counter FIR (BJP) \\ \midrule %% TinyTableHeader
-VB Schools                        & \num{0.003}*   & \num{0.003}*   & \num{0.003}*   \\
-& (\num{0.001})  & (\num{0.001})  & (\num{0.001})  \\
-Population                        & \num{0.000}*   & \num{0.000}*   & \num{0.000}**  \\
-& (\num{0.000})  & (\num{0.000})  & (\num{0.000})  \\
-\% SC Population                 & \num{-0.037}*  & \num{-0.054}   & \num{-0.023}   \\
-& (\num{0.019})  & (\num{0.050})  & (\num{0.015})  \\
-\% ST Population                 & \num{0.001}    & \num{0.003}    & \num{0.007}    \\
-& (\num{0.008})  & (\num{0.020})  & (\num{0.008})  \\
-\% Illiterate Population         & \num{-0.010}   & \num{-0.049}   & \num{-0.002}   \\
-& (\num{0.019})  & (\num{0.046})  & (\num{0.012})  \\
-\% Male Population               & \num{-0.045}   & \num{0.022}    & \num{0.166}    \\
-& (\num{0.140})  & (\num{0.324})  & (\num{0.120})  \\
-Male Main Employment              & \num{0.010}    & \num{0.090}    & \num{-0.003}   \\
-& (\num{0.026})  & (\num{0.078})  & (\num{0.023})  \\
-\% Muslim Population             & \num{-0.003}   & \num{0.018}    & \num{-0.005}   \\
-& (\num{0.015})  & (\num{0.030})  & (\num{0.010})  \\
-\% Christian Population          & \num{-0.012}   & \num{0.044}    & \num{0.000}    \\
-& (\num{0.020})  & (\num{0.038})  & (\num{0.006})  \\
-Total Primary Schools             & \num{0.000}    & \num{0.000}    & \num{0.000}    \\
-& (\num{0.000})  & (\num{0.000})  & (\num{0.000})  \\
-\% Settlements w/ paved road     & \num{-0.003}   & \num{0.019}    & \num{0.005}    \\
-& (\num{0.006})  & (\num{0.016})  & (\num{0.005})  \\
-\% Settlements w/ improved road  & \num{-0.031}** & \num{-0.095}** & \num{-0.018}** \\
-& (\num{0.012})  & (\num{0.034})  & (\num{0.007})  \\
-Distance to town > 100k           & \num{0.000}    & \num{0.000}    & \num{0.000}    \\
-& (\num{0.000})  & (\num{0.000})  & (\num{0.000})  \\
-Distance to town > 500k           & \num{0.000}    & \num{0.000}    & \num{0.000}    \\
-& (\num{0.000})  & (\num{0.000})  & (\num{0.000})  \\
-Average Nightlight Emission, 2008 & \num{0.000}    & \num{-0.001}   & \num{0.000}    \\
-& (\num{0.001})  & (\num{0.002})  & (\num{0.001})  \\
-Avg. Days to Court Decision, 2010 & \num{0.000}    & \num{0.000}    & \num{0.000}    \\
-& (\num{0.000})  & (\num{0.000})  & (\num{0.000})  \\
-IPC Violent Crime Count           & \num{0.000}    & \num{0.000}    & \num{0.000}    \\
-& (\num{0.000})  & (\num{0.000})  & (\num{0.000})  \\
-School Founding Year              &                 & \num{0.000}+   &                 \\
-&                 & (\num{0.000})  &                 \\
-(Intercept)                       &                 &                 & \num{-0.089}   \\
-&                 &                 & (\num{0.061})  \\
-BJP Gov. in Power (State)?        &                 &                 & \num{-0.005}   \\
-&                 &                 & (\num{0.006})  \\
-2014 BJP Voteshare (State)        &                 &                 & \num{0.000}    \\
-&                 &                 & (\num{0.000})  \\
-Num.Obs.                          & \num{5724}     & \num{1857}     & \num{5724}     \\
-R2                                & \num{0.071}    & \num{0.088}    & \num{0.059}    \\
-R2 Adj.                           & \num{0.063}    & \num{0.065}    & \num{0.056}    \\
-AIC                               & \num{-8842.1}  & \num{-1267.0}  & \num{-8766.8}  \\
-BIC                               & \num{-8722.3}  & \num{-1162.0}  & \num{-8627.1}  \\
-RMSE                              & \num{0.11}     & \num{0.17}     & \num{0.11}     \\
-Std.Errors                        & by: district    & by: district    & by: district    \\
-State FEs?                        & Y               & Y               & N               \\
+& Counter FIR (All) & Counter FIR (IM) & Counter FIR (BJP) & Counter FIR (Gov) \\ \midrule %% TinyTableHeader
+VB Schools                        & \num{0.002}   & \num{0.003}   & \num{0.002}   & \num{0.002}   \\
+& (\num{0.003}) & (\num{0.003}) & (\num{0.003}) & (\num{0.003}) \\
+Population                        & \num{0.000}   & \num{0.000}   & \num{0.000}   & \num{0.000}   \\
+& (\num{0.000}) & (\num{0.000}) & (\num{0.000}) & (\num{0.000}) \\
+\% SC Population                 & \num{-0.825}  & \num{-0.934}  & \num{-0.856}  & \num{-0.668}  \\
+& (\num{0.795}) & (\num{0.914}) & (\num{0.580}) & (\num{0.553}) \\
+\% ST Population                 & \num{-0.720}+ & \num{-0.670}  & \num{-0.602}* & \num{-0.645}* \\
+& (\num{0.362}) & (\num{0.422}) & (\num{0.234}) & (\num{0.241}) \\
+\% Illiterate Population         & \num{0.708}   & \num{0.800}   & \num{0.732}+  & \num{0.723}+  \\
+& (\num{0.554}) & (\num{0.603}) & (\num{0.383}) & (\num{0.389}) \\
+\% Male Population               & \num{-2.489}  & \num{-1.314}  & \num{0.655}   & \num{-0.122}  \\
+& (\num{3.643}) & (\num{3.488}) & (\num{2.672}) & (\num{3.036}) \\
+Male Main Employment              & \num{0.159}   & \num{0.642}   & \num{-0.259}  & \num{-0.094}  \\
+& (\num{0.950}) & (\num{0.998}) & (\num{0.717}) & (\num{0.715}) \\
+\% Muslim Population             & \num{-0.560}+ & \num{-0.547}  & \num{-0.554}* & \num{-0.498}* \\
+& (\num{0.304}) & (\num{0.388}) & (\num{0.245}) & (\num{0.229}) \\
+\% Christian Population          & \num{-0.629}  & \num{-0.971}  & \num{-0.382}  & \num{-0.195}  \\
+& (\num{0.751}) & (\num{0.838}) & (\num{0.412}) & (\num{0.389}) \\
+Total Primary Schools             & \num{0.000}   & \num{0.000}   & \num{0.000}   & \num{0.000}   \\
+& (\num{0.000}) & (\num{0.000}) & (\num{0.000}) & (\num{0.000}) \\
+\% Settlements w/ paved road     & \num{-0.046}  & \num{0.013}   & \num{-0.024}  & \num{-0.007}  \\
+& (\num{0.318}) & (\num{0.409}) & (\num{0.226}) & (\num{0.225}) \\
+\% Settlements w/ improved road  & \num{0.174}   & \num{0.172}   & \num{0.018}   & \num{0.031}   \\
+& (\num{0.210}) & (\num{0.312}) & (\num{0.128}) & (\num{0.131}) \\
+Distance to town > 100k           & \num{0.002}   & \num{0.001}   & \num{0.001}   & \num{0.001}   \\
+& (\num{0.001}) & (\num{0.001}) & (\num{0.001}) & (\num{0.001}) \\
+Distance to town > 500k           & \num{-0.001}  & \num{-0.001}  & \num{-0.001}* & \num{-0.001}+ \\
+& (\num{0.001}) & (\num{0.001}) & (\num{0.001}) & (\num{0.001}) \\
+Average Nightlight Emission, 2008 & \num{0.005}   & \num{0.000}   & \num{0.006}   & \num{0.007}   \\
+& (\num{0.009}) & (\num{0.008}) & (\num{0.008}) & (\num{0.008}) \\
+Avg. Days to Court Decision, 2010 & \num{0.000}   & \num{0.000}   & \num{0.000}+  & \num{0.000}   \\
+& (\num{0.000}) & (\num{0.000}) & (\num{0.000}) & (\num{0.000}) \\
+IPC Violent Crime Count           & \num{0.000}   & \num{0.000}   & \num{0.000}   & \num{0.000}   \\
+& (\num{0.000}) & (\num{0.000}) & (\num{0.000}) & (\num{0.000}) \\
+School Founding Year              &                & \num{0.004}*  &                &                \\
+&                & (\num{0.002}) &                &                \\
+(Intercept)                       &                &                & \num{0.139}   & \num{0.292}   \\
+&                &                & (\num{1.517}) & (\num{1.617}) \\
+2014 BJP Voteshare (State)        &                &                & \num{-0.002}  &                \\
+&                &                & (\num{0.003}) &                \\
+BJP Gov. in Power (State)?        &                &                &                & \num{0.041}   \\
+&                &                &                & (\num{0.096}) \\
+Num.Obs.                          & \num{160}     & \num{131}     & \num{160}     & \num{160}     \\
+R2                                & \num{0.189}   & \num{0.245}   & \num{0.090}   & \num{0.089}   \\
+R2 Adj.                           & \num{-0.057}  & \num{-0.067}  & \num{-0.026}  & \num{-0.027}  \\
+AIC                               & \num{55.0}    & \num{55.7}    & \num{58.7}    & \num{58.7}    \\
+BIC                               & \num{110.3}   & \num{110.4}   & \num{120.2}   & \num{120.2}   \\
+Std.Errors                        & by: district   & by: district   & by: district   & by: district   \\
+State FEs?                        & Y              & Y              & N              & N              \\
 \bottomrule
 \end{talltblr}
 \end{table}

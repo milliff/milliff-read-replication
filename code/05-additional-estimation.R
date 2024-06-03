@@ -19,6 +19,7 @@
 
 # SET OPTIONS ---------------------------------------
 cat("SETTING OPTIONS... \n\n", sep = "")
+library(tidyverse); library(estimatr); library(modelsummary); library(MASS)
 
 # LOAD DATA ------------------------------------
 load("./data/main_df_28May24.RData")
@@ -39,15 +40,15 @@ count_mod_ext <- lm_robust(count ~ any_vb, data = df, clusters = district, fixed
 count_mod_ext_cov <- lm_robust(count ~ any_vb + tot_pop + pc_sc + pc_st + pc_illt + pc_male + 
                                  wf_male + pc_muslim + pc_christian + prim_school + tar_road + 
                                  dirt_road +  tdist_100k + tdist_500k + nightlight_08 + 
-                                 mean_time_decision + vio_crim, data = df, clusters = district, fixed_effects = state_ut)
+                                 mean_time_decision + vio_crim + ucdp, data = df, clusters = district, fixed_effects = state_ut)
 count_mod_ext_ext <- lm_robust(any_hc ~ any_vb + tot_pop + pc_sc + pc_st + pc_illt + pc_male + 
                                  wf_male + pc_muslim + pc_christian + prim_school + tar_road + 
                                  dirt_road +  tdist_100k + tdist_500k + nightlight_08 + 
-                                 mean_time_decision + vio_crim, data = df, clusters = district, fixed_effects = state_ut)
+                                 mean_time_decision + vio_crim + ucdp, data = df, clusters = district, fixed_effects = state_ut)
 count_mod_fat_ext <- lm_robust(any_fat~ any_vb + tot_pop + pc_sc + pc_st + pc_illt + pc_male + 
                                  wf_male + pc_muslim + pc_christian + prim_school + tar_road + 
                                  dirt_road +  tdist_100k + tdist_500k + nightlight_08 + 
-                                 mean_time_decision + vio_crim, data = df, clusters = district, fixed_effects = state_ut)
+                                 mean_time_decision + vio_crim + ucdp, data = df, clusters = district, fixed_effects = state_ut)
 
 
 modelsummary::modelsummary(list(count_mod_ext, count_mod_ext_cov, count_mod_ext_ext, count_mod_fat_ext), stars = T,
@@ -69,7 +70,8 @@ modelsummary::modelsummary(list(count_mod_ext, count_mod_ext_cov, count_mod_ext_
                                         "nightlight_08" = "Avg. Nightlight Emission, 2008",
                                         "mean_time_decision" = "Avg. Days to Court Decision, 2010",
                                         "vio_crim" = "IPC Violent Crime Count",
-                                        "tot_crim" = "IPC Total Crime Count"), output = "./results/tabs/TabA6.tex")
+                                        "tot_crim" = "IPC Total Crime Count",
+                                        "ucdp" =  "Pre-008 UCDP Events"), output = "./results/tabs/TabA6.tex")
 
 
 # Table A7 ----------------------------------------------------------------
@@ -77,12 +79,12 @@ modelsummary::modelsummary(list(count_mod_ext, count_mod_ext_cov, count_mod_ext_
 nb_count <- MASS::glm.nb(count ~vb_count + state_ut + tot_pop + pc_sc + pc_st + pc_illt + pc_male + 
                            wf_male + pc_muslim + pc_christian + prim_school + tar_road + 
                            dirt_road +  tdist_100k + tdist_500k + nightlight_08 + 
-                           mean_time_decision + vio_crim, data = df)
+                           mean_time_decision + vio_crim + ucdp, data = df)
 
 pois_count <- glm(count ~vb_count + state_ut + tot_pop + pc_sc + pc_st + pc_illt + pc_male + 
                     wf_male + pc_muslim + pc_christian + prim_school + tar_road + 
                     dirt_road +  tdist_100k + tdist_500k + nightlight_08 + 
-                    mean_time_decision + vio_crim, data = df, family = "poisson")
+                    mean_time_decision + vio_crim + ucdp, data = df, family = "poisson")
 
 
 modelsummary::modelsummary(list("Negative Binomial" = nb_count, "Poisson" =pois_count), stars = T, 
@@ -104,4 +106,5 @@ modelsummary::modelsummary(list("Negative Binomial" = nb_count, "Poisson" =pois_
                                                                                                                          "nightlight_08" = "Avg. Nightlight Emission, 2008",
                                                                                                                          "mean_time_decision" = "Avg. Days to Court Decision, 2010",
                                                                                                                          "vio_crim" = "IPC Violent Crime Count",
-                                                                                                                         "tot_crim" = "IPC Total Crime Count"), output = "./results/tabs/TabA7.tex")
+                                                                                                                         "tot_crim" = "IPC Total Crime Count",
+                                                                                                                         "ucdp" =  "Pre-008 UCDP Events"), output = "./results/tabs/TabA7.tex")

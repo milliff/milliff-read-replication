@@ -1,0 +1,29 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+entry=none,label=none,
+note{}={+ p < 0.1, * p < 0.05, ** p < 0.01, *** p < 0.001},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]},
+column{1}={halign=l,},
+column{2}={halign=c,},
+column{3}={halign=c,},
+hline{6}={1,2,3}{solid, 0.05em, black},
+}                     %% tabularray inner close
+\toprule
+& (1) & (2) \\ \midrule %% TinyTableHeader
+Schools per Capita        & \num{-0.001}  &                \\
+& (\num{0.023}) &                \\
+Non-VB Schools per Capita &                & \num{-0.001}  \\
+&                & (\num{0.024}) \\
+Num.Obs.                  & \num{5863}    & \num{5863}    \\
+R2                        & \num{0.025}   & \num{0.025}   \\
+R2 Adj.                   & \num{0.020}   & \num{0.020}   \\
+AIC                       & \num{3755.3}  & \num{3755.3}  \\
+BIC                       & \num{3768.7}  & \num{3768.7}  \\
+RMSE                      & \num{0.33}    & \num{0.33}    \\
+Std.Errors                & by: district   & by: district   \\
+\bottomrule
+\end{talltblr}
+\end{table}

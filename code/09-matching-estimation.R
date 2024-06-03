@@ -8,7 +8,7 @@
 #
 # Script Name: matching-estimation.R
 #
-# Script Description: Estimates VB-HC association with matching and balancing, produces Figures [TKTK] as well as Tables [TKTK]
+# Script Description: Estimates VB-HC association with matching and balancing, produces Figures A8 and A9 as well as Table A22
 #
 #
 # Notes:
@@ -19,9 +19,10 @@
 
 # SET OPTIONS ---------------------------------------
 cat("SETTING OPTIONS./. \n\n", sep = "")
+library(MatchIt); library(WeightIt); library(tidyverse); library()
 
 # LOAD DATA ------------------------------------
-load(".//data/main_df_28May24.RData")
+load("./data/main_df_28May24.RData")
 
 
 # -------------------------------------------------------------------------
@@ -49,7 +50,7 @@ avg_predictions(fit, variables = list(vb_count = values)) |>
        subtitle = "Estimates from entropy-balanced weighted regression",
        caption = "EBal on: % Muslim, % Christian, % ST population") +
   theme_bw() + scale_color_taylor()
-ggsave(".//results/figs/ebalance_weighting.png", width = 11, height = 8, dpi = 300)
+ggsave("./results/figs/FigaA9.png", width = 11, height = 8, dpi = 300)
 
 
 # Matching (Genetic; Nearest Neighbor) ------------------------------------
@@ -70,7 +71,7 @@ load(".//data/genmatch.RData")
 load(".//data/nnmatch.RData")
 
 plot(summary(nnm))
-png(filename = ".//results/figs/genmatch_diagn.png", width = 1000, height = 750)
+png(filename = "./results/figs/FigA8.png", width = 1000, height = 750)
 plot(summary(genm))
 dev.off()
 
@@ -86,4 +87,4 @@ gen_fit <- lm(count ~ Tr * (tot_pop + pc_sc + pc_st + pc_muslim + pc_christian +
 marginaleffects::avg_comparisons(gen_fit,
                                  variables = "Tr",
                                  newdata = subset(gen.data, Tr == TRUE),
-                                 wts = "weights") |> knitr::kable(format = "latex") |> kableExtra::save_kable(file = ".//results/tabs/genmatch_results.tex")
+                                 wts = "weights") |> knitr::kable(format = "latex") |> kableExtra::save_kable(file = "./results/tabs/TabA22.tex")

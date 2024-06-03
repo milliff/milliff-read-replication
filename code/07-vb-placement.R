@@ -8,7 +8,7 @@
 #
 # Script Name: vb-placement.R
 #
-# Script Description: Recreates models of VB school placement in Tables A.12 and A.13
+# Script Description: Recreates models of VB school placement in Tables A.13 and A.14
 #
 #
 # Notes:
@@ -19,6 +19,7 @@
 
 # SET OPTIONS ---------------------------------------
 cat("SETTING OPTIONS... \n\n", sep = "")
+library(tidyverse); library(estimatr); library(modelsummary); 
 
 # LOAD DATA ------------------------------------
 load("./data/main_df_28May24.RData")
@@ -29,7 +30,7 @@ load("./data/main_df_28May24.RData")
 # -------------------------------------------------------------------------
 
 
-# Table A12, A13 ---------------------------------------------------------------
+# Table A13, A14 ---------------------------------------------------------------
 
 df <- df |> mutate(any_hc = ifelse(count > 0, 1, 0),
                              any_fat = ifelse(fatal > 0, 1, 0),
@@ -81,7 +82,7 @@ modelsummary::modelsummary(list(vb_presence, vb_presence_rel, vb_presence_chr, v
                                         "vio_crim" = "IPC Violent Crime Count",
                                         "tot_crim" = "IPC Total Crime Count",
                                         "tot_pop" = "Population"
-                           ), output = "./results/tabs/TabA13.tex")
+                           ), output = "./results/tabs/TabA14.tex")
 
 modelsummary::modelsummary(list(vb_number, vb_number_rel, vb_number_chr, vb_number_scst, vb_number_wfd, vb_number_dev, vb_count_all), stars = T, title = "Correlations with VB School Count", 
                            coef_map = c("I(prim_school - vb_count)" = "Non-VB Primary School Count",
@@ -106,4 +107,4 @@ modelsummary::modelsummary(list(vb_number, vb_number_rel, vb_number_chr, vb_numb
                                         "vio_crim" = "IPC Violent Crime Count",
                                         "tot_crim" = "IPC Total Crime Count",
                                         "tot_pop" = "Population"
-                           ), output = "./results/tabs/TabA12.tex")
+                           ), output = "./results/tabs/TabA13.tex")

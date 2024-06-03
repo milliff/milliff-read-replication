@@ -8,13 +8,18 @@
 #
 # Script Name: hcw-descriptive-statistics.R
 #
-# Script Description: Produces data description and summary statistics for Hate Crime Watch data in Figure 1, Figure 3, Figure A.1, Table A.1
+# Script Description: Produces data description and summary statistics for Hate Crime Watch data in Figure 1, Figure 2, Figure A.1, Table A.1
 #
 #
 # Notes:
 #
 #
 # --------------------------------------------
+# SET OPTIONS ---------------------------------------
+cat("SETTING OPTIONS... \n\n", sep = "")
+
+library(tidyverse); library(estimatr); library(sf)
+library(tmap); library(knitr)
 
 # LOAD DATA ------------------------------------
 hc    <- read_csv("./data/hc_locs.csv")
@@ -61,7 +66,7 @@ hc_in_subdi <- hc %>%
   st_as_sf(
     coords = c("lon", "lat"),
     agr = "constant",
-    crs = 4326, # WGS84
+    crs = st_crs(4326), # WGS84
     stringsAsFactors = F,
     remove = T
   ) 
@@ -88,7 +93,7 @@ tm_shape(hc_subdi_df) +
     alpha = 0.8
   )
 
-tmap_save(filename = "./results/figs/Fig3b.png")
+tmap_save(filename = "./results/figs/Fig2b.png")
 
 
 # Figure A1 ---------------------------------------------------------------
