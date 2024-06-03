@@ -6,7 +6,7 @@ This repository contains the replication package for the paper:
 
 Milliff, Aidan and Blair Read. 2024. "Understanding Majoritarian Violence: Evidence from Hate Crimes and Crowd Violence in India."
 
-The replication package provides all the necessary resources and instructions to reproduce the experiments and results presented in the paper.
+The replication package provides all the necessary resources and instructions to reproduce the results presented in the paper.
 
 ## Table of Contents
 
@@ -134,7 +134,7 @@ This license requires that reusers give credit to the creator. It allows reusers
 
 ## Contact
 
-Direct questions, complaints, and compliments to ![Aidan Milliff](mailto:milliff.a@gmail.com)
+Direct questions, complaints, and compliments to [Aidan Milliff](mailto:milliff.a@gmail.com)
 
 ## Citation
 
