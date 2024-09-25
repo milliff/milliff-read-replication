@@ -10,12 +10,12 @@ The replication package provides all the necessary resources and instructions to
 
 ## Table of Contents
 
-- [Introduction](##introduction)
-- [Installation](##installation)
-- [Replication](##replication)
-- [License](##license)
-- [Contact](##contact)
-- [Citation](##citation)
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Replication](#replication)
+- [License](#license)
+- [Contact](#contact)
+- [Citation](#citation)
 
 ## Introduction
 
