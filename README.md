@@ -4,22 +4,22 @@
 
 This repository contains the replication package for the paper:
 
-Milliff, Aidan and Blair Read. 2024. "Understanding Majoritarian Violence: Evidence from Hate Crimes and Crowd Violence in India."
+Milliff, Aidan and Blair Read. 2024. "Understanding Majoritarian Violence: Evidence from Vigilante Violence in India."
 
 The replication package provides all the necessary resources and instructions to reproduce the results presented in the paper.
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Installation](#installation)
-- [Replication](#replication)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+- [Introduction](##introduction)
+- [Installation](##installation)
+- [Replication](##replication)
+- [License](##license)
+- [Contact](##contact)
+- [Citation](##citation)
 
 ## Introduction
 
-A brief introduction to the paper and its objectives.
+ Extralegal violence threatens human rights and public order in many societies. These threats are especially acute in India, where mobs often punish transgressions of majority-community norms---like eating beef or pursuing inter-religious or inter-caste romantic relationships---through targeted vigilante violence. We develop a new theory explaining vigilante violence in India, an important case that differs from the patterns of vigilantism observed in other contexts. We use newly-available data to show that spatial variation in vigilante attacks in India is strongly associated with the strength of majoritarian institutions, measured via the presence of majoritarian-ideology schools. We further show that the relationship between majoritarian institutions and vigilante violence is driven by communities where majoritarian institutions have persisted longer, not areas of new expansion. We contextualize these findings by examining three high-profile attacks in India and identifying shared patterns: Though attacks appear spontaneous and mass-driven, they are usually coordinated by a core group of perpetrators affiliated with a durable organization which uses the spectacle of violence to generate a larger group of \textit{peripheral} participants. While most recent literature on vigilantism finds that mob justice substitutes for state law enforcement, we find that vigilantism in India is associated with the rise of para-statal organizations operating even where there are no state capacity vacuums to fill. Because vigilante violence in India is not a spontaneous, grass-roots response to state weakness, we caution that efforts to increase the capacity of local law enforcement or the legal system are unlikely to curb majoritarian violence.
 
 ## Installation
 
@@ -140,5 +140,5 @@ Direct questions, complaints, and compliments to [Aidan Milliff](mailto:milliff.
 
 If you use this replication package or data in your research, please cite the original paper:
 
-Milliff, Aidan and Blair Read. 2024. "Understanding Majoritarian Violence: Evidence from Hate Crimes and Crowd Violence in India."
+Milliff, Aidan and Blair Read. 2024. "Understanding Majoritarian Violence: Evidence from Vigilante Violence in India."
 
